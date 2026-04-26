@@ -66,7 +66,7 @@ O objetivo deste projeto foi simular um cenário real de análise de dados em um
 
 ![Faturamento por Produto](graficos/faturamento_por_produto.png)
 
-> **Insight:** Tênis Vans é o produto mais vendido em quantidade, mas o **Notebook Dell** lidera o faturamento. O **Óculos Ray-Ban** é o produto que menos vende em quantidade, mas ocupa a 3ª posição em faturamento, indicando um perfil premium.
+> **Insight:** O **Tênis Vans** foi o produto que apareceu em mais pedidos, enquanto o **Notebook Dell** liderou tanto em faturamento quanto em quantidade total vendida. Já o **Óculos Ray-Ban** teve menor volume de vendas, mas ficou entre os produtos com maior faturamento, indicando um perfil premium.
 
 -----
 
