@@ -22,7 +22,7 @@ O objetivo deste projeto foi simular um cenário real de análise de dados em um
 |---|---|
 | 💵 Faturamento Total | R$ 875.797,80 |
 | 🏆 Produto com Maior Faturamento | Notebook Dell |
-| 📦 Produto Mais Vendido em Quantidade | Tênis Vans |
+| 📦 Produto Mais Vendido em Quantidade | Notebook Dell |
 | 🗺️ Estado com Maior Faturamento | SC |
 | 📍 Estado com Mais Pedidos | GO |
 
