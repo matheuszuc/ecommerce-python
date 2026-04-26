@@ -15,8 +15,8 @@ Analisar os pedidos de uma operação de e-commerce para responder perguntas com
 - Quais produtos mais contribuíram para o faturamento?
 - Qual foi a taxa de cancelamento?
 - Quais formas de pagamento geraram mais faturamento?
-- Quais estados tiveram maior faturamento?
 - Quais estados tiveram maior quantidade vendida?
+- Qual estado gerou o maior faturamento?
 - Como o faturamento variou ao longo dos meses?
 
 ---
@@ -33,17 +33,24 @@ Analisar os pedidos de uma operação de e-commerce para responder perguntas com
 ## Estrutura do Projeto
 
 ```bash
-├── ecommerce_pedidos.csv
-├── ecommerce_pedidos_limpo.csv
+ecommerce-python/
+│
+├── data/
+│   ├── ecommerce_pedidos.csv
+│   └── ecommerce_pedidos_limpo.csv
+│
+├── grafico/
+│   ├── faturamento_por_estado.png
+│   ├── grafico_faturamento_categoria.png
+│   ├── grafico_faturamento_mensal.png
+│   ├── grafico_pagamento.png
+│   ├── grafico_pedidos_por_estado.png
+│   ├── grafico_quantidade_vendida_estado.png
+│   ├── grafico_status_pedidos.png
+│   └── grafico_top_produtos.png
+│
 ├── limpeza.ipynb
 ├── analise_insights.ipynb
-├── grafico_faturamento_mensal.png
-├── grafico_faturamento_categoria.png
-├── grafico_faturamento_estado.png
-├── grafico_pagamento.png
-├── grafico_status_pedidos.png
-├── grafico_top_produtos.png
-├── grafico_quantidade_vendida_estado.png
 └── README.md
 ```
 
@@ -53,7 +60,7 @@ Analisar os pedidos de uma operação de e-commerce para responder perguntas com
 
 ### 1. Importação dos dados
 
-A base foi carregada a partir de um arquivo CSV contendo informações sobre pedidos, clientes, produtos, categorias, estados, formas de pagamento, status dos pedidos e datas.
+A base foi carregada a partir de um arquivo CSV localizado na pasta `data/`, contendo informações sobre pedidos, clientes, produtos, categorias, estados, formas de pagamento, status dos pedidos e datas.
 
 ---
 
@@ -143,6 +150,14 @@ As opções com maior participação foram cartões, principalmente cartão de d
 
 ---
 
+### Faturamento por estado
+
+Foi criada uma análise de faturamento líquido por estado, permitindo comparar receita com volume de pedidos e quantidade vendida.
+
+Essa visão mostrou que o estado com maior faturamento não necessariamente é o estado com maior volume de produtos vendidos.
+
+---
+
 ### Status dos pedidos
 
 A análise dos status permitiu identificar a quantidade de pedidos entregues, pendentes, em trânsito e cancelados.
@@ -151,23 +166,11 @@ A taxa de cancelamento foi um ponto de atenção, pois representa uma perda dire
 
 ---
 
-### Faturamento por estado
-
-Também foi analisado o faturamento líquido por estado, considerando apenas pedidos que não foram cancelados.
-
-Essa análise permite identificar quais regiões geraram maior receita para a empresa, não apenas maior volume de pedidos.
-
-O estado de Santa Catarina (SC) apresentou o maior faturamento da base, mesmo não sendo o estado com maior volume de pedidos. Esse comportamento indica que SC pode ter concentrado pedidos de maior valor ou produtos com ticket médio mais alto.
-
----
-
 ### Quantidade vendida por estado
 
 Além da quantidade de pedidos por estado, também foi analisada a quantidade total de unidades vendidas.
 
 Essa análise foi feita somando a coluna `quantidade`, permitindo entender melhor quais estados concentraram maior volume de produtos vendidos.
-
-No caso de SC, o estado ficou entre os maiores volumes de produtos vendidos, mas o principal destaque foi o faturamento. Isso reforça que não basta analisar apenas quantidade, pois um estado pode vender menos unidades ou ter menos pedidos e ainda assim gerar mais receita.
 
 ---
 
@@ -189,28 +192,27 @@ A taxa de cancelamento ficou em aproximadamente 15,5%. Esse indicador merece aco
 
 Cartão de débito e cartão de crédito tiveram forte participação no faturamento líquido, ficando à frente de outros métodos como PIX e boleto.
 
-### 5. Estados com mais vendas podem indicar regiões estratégicas
+### 5. Santa Catarina lidera em faturamento
+
+Santa Catarina foi o estado com maior faturamento líquido da base. Porém, ao comparar com os indicadores de volume, percebe-se que SC não foi o estado com maior quantidade de produtos vendidos.
+
+Mesmo assim, SC ficou em destaque no faturamento, o que pode indicar pedidos com maior valor médio ou maior concentração de produtos de alto valor agregado.
+
+### 6. Estados com mais vendas podem indicar regiões estratégicas
 
 A análise de quantidade vendida por estado ajuda a identificar regiões com maior volume de produtos vendidos, o que pode apoiar decisões de estoque, logística e campanhas regionais.
-
-### 6. SC tem o maior faturamento, mesmo sem liderar todos os indicadores de volume
-
-Santa Catarina (SC) foi o estado com maior faturamento líquido da base. Porém, ao comparar com os indicadores de volume, percebe-se que SC não lidera todos eles.
-
-Na análise de quantidade vendida, SC aparece entre os maiores estados em volume de produtos. Já na quantidade de pedidos, SC não é o primeiro colocado. Mesmo assim, o estado lidera em faturamento.
-
-Esse comportamento sugere que SC teve pedidos com maior valor médio, possivelmente por uma maior concentração de produtos de alto valor agregado. Esse é um bom exemplo de por que é importante analisar faturamento, quantidade vendida e número de pedidos separadamente.
 
 ---
 
 ## Gráficos Gerados
 
-Foram gerados gráficos para facilitar a visualização dos principais resultados:
+Os gráficos foram salvos na pasta `grafico/`:
 
 - Faturamento líquido por mês
 - Faturamento líquido por categoria
-- Faturamento líquido por estado
 - Faturamento líquido por forma de pagamento
+- Faturamento líquido por estado
+- Quantidade de pedidos por estado
 - Quantidade de pedidos por status
 - Top 10 produtos por faturamento
 - Quantidade vendida por estado
@@ -255,9 +257,7 @@ analise_insights.ipynb
 
 Este projeto mostra um processo completo de análise de dados com Python, começando pela limpeza da base, passando pela correção de inconsistências e finalizando com KPIs, insights e gráficos.
 
-A análise permitiu identificar categorias e produtos mais relevantes, formas de pagamento mais representativas, impacto dos cancelamentos e regiões com maior faturamento e maior quantidade vendida.
-
-Um dos principais aprendizados foi comparar métricas diferentes antes de tirar conclusões. O caso de SC mostra que um estado pode não ser o primeiro em volume de pedidos, mas ainda assim liderar em faturamento, indicando maior valor médio por venda.
+A análise permitiu identificar categorias e produtos mais relevantes, formas de pagamento mais representativas, impacto dos cancelamentos, regiões com maior quantidade vendida e estados com maior faturamento.
 
 O projeto reforça habilidades importantes para a área de dados, como tratamento de dados, criação de indicadores, análise exploratória e comunicação de resultados.
 
