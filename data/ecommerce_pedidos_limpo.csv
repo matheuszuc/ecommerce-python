@@ -1,443 +1,511 @@
-pedido_id,cliente,estado,produto,categoria,quantidade,valor_unitario,valor_total,status,pagamento,data_pedido,data_entrega
-1,Diego Souza,RJ,Mochila Samsonite,Acessórios,3,259.9,779.7,Entregue,Cartão de Débito,2024-11-27,2024-12-03
-2,Lucas Pereira,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Boleto,2024-10-14,2024-10-27
-3,Marina Gomes,PE,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Cancelado,Cartão de Débito,2024-03-17,
-4,Henrique Alves,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Cancelado,Boleto,2024-09-07,
-5,João Oliveira,RJ,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Cancelado,Boleto,2024-05-13,
-6,Bruno Costa,RJ,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-05-11,2024-10-14
-7,Lucas Pereira,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Débito,2024-10-25,2024-11-02
-8,Lucas Pereira,GO,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Cartão de Crédito,2024-02-27,
-9,Felipe Lima,PE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-10-02,
-10,Felipe Lima,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,PIX,2024-05-15,2024-05-17
-11,Elena Ferreira,BA,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-03-30,2024-04-03
-12,Diego Souza,PR,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-11-23,2024-12-07
-13,Isabela Martins,CE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-10-11,2024-11-12
-14,Elena Ferreira,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,,2024-10-16,2024-10-29
-15,Isabela Martins,PR,Camiseta Adidas,Vestuário,5,89.9,449.5,Em trânsito,Boleto,2024-10-22,
-16,Felipe Lima,PR,Mochila Samsonite,Acessórios,3,259.9,779.7,Entregue,PIX,2024-10-16,2024-10-31
-17,Isabela Martins,PR,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Cartão de Débito,2024-02-20,2024-03-05
-18,Carla Mendes,RJ,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-07-27,2024-07-30
-19,Nicolas Barbosa,BA,Tênis Nike Air Max,Calçados,1,349.9,349.9,Cancelado,PIX,2024-04-05,
-20,Henrique Alves,SP,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,Boleto,2024-02-25,2024-03-01
-21,Carla Mendes,BA,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Entregue,Cartão de Crédito,2024-10-20,2024-11-01
-23,Felipe Lima,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-12-23,2024-12-30
-24,Nicolas Barbosa,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Débito,2024-09-17,2024-09-24
-26,Lucas Pereira,,Mochila Samsonite,Acessórios,1,259.9,259.9,Cancelado,Boleto,2024-11-16,
-27,Ana Silva,BA,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Boleto,2024-01-30,2024-02-13
-28,Isabela Martins,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Pendente,Cartão de Débito,2024-09-04,
-29,Olivia Castro,MG,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-10-25,2024-11-04
-30,Karla Santos,MG,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Cancelado,Cartão de Débito,2024-04-21,
-31,João Oliveira,MG,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Pendente,Cartão de Crédito,2024-10-12,
-32,Elena Ferreira,GO,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,PIX,2024-11-16,2024-11-25
-33,Felipe Lima,SC,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Crédito,2024-10-10,2024-10-24
-34,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Crédito,2024-08-18,2024-09-02
-35,Lucas Pereira,RJ,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Cancelado,Boleto,2024-10-02,
-36,Isabela Martins,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,Cartão de Crédito,2024-07-18,
-37,Felipe Lima,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-11-11,2024-11-25
-38,Diego Souza,PR,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,PIX,2024-06-07,2024-07-13
-39,Bruno Costa,RS,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Pendente,Cartão de Crédito,2024-06-19,
-40,Elena Ferreira,RJ,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Cartão de Crédito,2024-03-21,
-41,Ana Silva,PR,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,PIX,2024-02-10,2024-10-06
-42,Henrique Alves,GO,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Boleto,2024-07-11,
-43,Marina Gomes,SC,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-03-21,2024-03-30
-44,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Em trânsito,Cartão de Crédito,2024-01-26,
-45,Marina Gomes,SP,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,PIX,2024-11-01,
-46,João Oliveira,SP,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Cartão de Débito,2024-12-08,
-47,Felipe Lima,RS,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Boleto,2024-02-03,2024-03-05
-48,João Oliveira,PR,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Cancelado,Cartão de Crédito,2024-06-07,
-49,Nicolas Barbosa,RJ,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Débito,2024-09-25,2024-09-28
-50,Henrique Alves,PR,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,Boleto,2024-05-10,
-51,Isabela Martins,CE,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,Boleto,2024-03-19,
-52,Isabela Martins,SC,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Cartão de Crédito,2024-08-18,2024-09-01
-53,Henrique Alves,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Crédito,2024-08-21,2024-08-25
-55,Felipe Lima,CE,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,PIX,2024-01-09,2024-09-05
-56,Nicolas Barbosa,RJ,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,Boleto,2024-06-07,2024-07-20
-57,Nicolas Barbosa,PR,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,PIX,2024-11-22,2024-11-28
-58,Nicolas Barbosa,GO,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-01-17,2024-01-30
-59,Henrique Alves,RJ,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Em trânsito,Cartão de Débito,2024-01-11,
-60,Marina Gomes,SC,Camiseta Adidas,Vestuário,5,89.9,449.5,Em trânsito,Cartão de Crédito,2024-02-12,
-61,Bruno Costa,PE,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,Boleto,2024-08-03,
-62,Diego Souza,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Cancelado,Boleto,2024-07-15,
-63,Isabela Martins,SP,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Cartão de Débito,2024-02-22,2024-03-06
-64,Elena Ferreira,MG,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Boleto,2024-09-11,
-66,Gabriela Rocha,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Cancelado,Boleto,2024-08-30,
-67,Bruno Costa,PE,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,PIX,2024-01-10,
-68,Carla Mendes,,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,PIX,2024-04-11,2024-11-09
-69,Marina Gomes,PR,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Boleto,2024-03-16,2024-03-19
-70,Bruno Costa,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Débito,2024-12-24,
-71,Diego Souza,MG,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Em trânsito,Cartão de Débito,2024-07-09,
-72,Olivia Castro,PR,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Em trânsito,Boleto,2024-02-17,
-74,Gabriela Rocha,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Boleto,2024-06-28,
-75,,SC,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,Boleto,2024-06-12,2024-11-13
-76,Felipe Lima,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Boleto,2024-08-31,2024-09-03
-77,Lucas Pereira,SC,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Pendente,PIX,2024-10-09,
-78,Elena Ferreira,PE,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,PIX,2024-10-12,2024-12-16
-79,Elena Ferreira,SP,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,Boleto,2024-05-22,
-80,Lucas Pereira,SC,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,Boleto,2024-09-28,2024-10-08
-81,Olivia Castro,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-05-06,
-82,Marina Gomes,SC,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Boleto,2024-11-24,2024-11-27
-83,Nicolas Barbosa,MG,Mochila Samsonite,Acessórios,3,259.9,779.7,Pendente,Cartão de Débito,2024-05-31,
-84,Lucas Pereira,SC,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Débito,2024-12-07,
-85,Isabela Martins,,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,Boleto,2024-04-29,2024-05-14
-87,Carla Mendes,RJ,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,PIX,2024-04-05,
-88,Marina Gomes,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Débito,2024-04-12,2024-12-11
-89,Isabela Martins,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Boleto,2024-06-06,2024-06-12
-90,Isabela Martins,MG,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,PIX,2024-08-30,2024-09-13
-91,Gabriela Rocha,,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Crédito,2024-02-07,2024-07-07
-92,Lucas Pereira,GO,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Cartão de Crédito,2024-02-17,2024-02-23
-93,Ana Silva,PR,Camiseta Adidas,Vestuário,4,89.9,359.6,Em trânsito,Cartão de Débito,2024-07-05,
-94,Marina Gomes,MG,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-05-21,2024-06-03
-95,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-07-14,
-96,,GO,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Cancelado,Cartão de Crédito,2024-10-01,
-97,Ana Silva,MG,Mochila Samsonite,Acessórios,3,259.9,779.7,Cancelado,Boleto,2024-06-22,
-98,Henrique Alves,SC,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-11-14,2024-11-28
-99,Felipe Lima,PR,Camiseta Adidas,Vestuário,1,89.9,89.9,Cancelado,Cartão de Crédito,2024-07-16,
-100,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,Cartão de Débito,2024-09-11,2024-11-24
-102,Olivia Castro,PR,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Boleto,2024-12-24,2025-01-01
-103,Karla Santos,RS,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Cancelado,PIX,2024-02-01,
-104,Nicolas Barbosa,PE,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Boleto,2024-08-31,2024-09-15
-106,João Oliveira,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Débito,2024-04-22,2024-05-01
-107,Ana Silva,PR,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Cancelado,Boleto,2024-05-25,
-108,Lucas Pereira,BA,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-09-20,2024-09-30
-109,Isabela Martins,BA,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Pendente,PIX,2024-02-21,
-110,Diego Souza,CE,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Boleto,2024-05-16,2024-05-30
-111,Marina Gomes,SP,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Entregue,Cartão de Débito,2024-09-29,2024-10-07
-115,Bruno Costa,PE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Débito,2024-06-23,2024-06-27
-116,Carla Mendes,GO,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Crédito,2024-02-17,2024-02-25
-117,,GO,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-12-16,2024-12-23
-118,Ana Silva,PE,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,PIX,2024-05-29,2024-06-06
-119,Gabriela Rocha,RJ,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Boleto,2024-01-15,2024-01-17
-120,Karla Santos,SC,Mochila Samsonite,Acessórios,3,259.9,779.7,Entregue,Boleto,2024-10-10,2024-10-14
-121,Gabriela Rocha,SC,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Cancelado,Boleto,2024-07-26,
-122,Ana Silva,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,PIX,2024-05-07,
-123,Gabriela Rocha,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Cartão de Crédito,2024-04-22,2024-04-28
-124,Isabela Martins,BA,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Pendente,Cartão de Crédito,2024-01-02,
-125,Diego Souza,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,PIX,2024-04-11,2024-11-08
-126,,RS,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Pendente,PIX,2024-07-30,
-128,Gabriela Rocha,RJ,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Crédito,2024-11-01,2024-11-12
-129,Marina Gomes,RJ,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,PIX,2024-04-25,
-130,Bruno Costa,PE,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,Cartão de Débito,2024-10-12,2024-12-21
-131,Gabriela Rocha,BA,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Cancelado,Cartão de Débito,2024-06-03,
-132,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Boleto,2024-03-24,2024-03-31
-133,Lucas Pereira,BA,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,PIX,2024-06-11,2024-11-16
-134,Bruno Costa,CE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,PIX,2024-01-05,2024-05-07
-137,João Oliveira,SC,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Entregue,Boleto,2024-03-04,2024-04-12
-138,Henrique Alves,SP,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-04-24,2024-05-06
-139,João Oliveira,RJ,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Boleto,2024-04-26,
-140,Ana Silva,,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Débito,2024-05-26,2024-06-05
-142,João Oliveira,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Cartão de Débito,2024-05-22,2024-05-26
-144,Lucas Pereira,,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Cancelado,Cartão de Crédito,2024-01-26,
-145,Bruno Costa,PE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,PIX,2024-05-29,2024-06-09
-146,Nicolas Barbosa,BA,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,PIX,2024-03-22,
-149,João Oliveira,MG,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,Boleto,2024-03-24,
-150,Marina Gomes,RS,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-01-13,2024-01-18
-151,Ana Silva,RJ,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Em trânsito,PIX,2024-02-09,
-152,Isabela Martins,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Débito,2024-04-08,2024-08-08
-153,Elena Ferreira,GO,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-07-24,2024-08-01
-155,Marina Gomes,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-01-11,2024-11-10
-156,Olivia Castro,PR,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,PIX,2024-11-24,2024-12-06
-157,Lucas Pereira,CE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Débito,2024-07-18,2024-07-20
-158,Lucas Pereira,PE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,Boleto,2024-04-21,2024-04-23
-159,Ana Silva,SC,Tênis Vans,Calçados,1,279.9,279.9,Em trânsito,Boleto,2024-08-06,
-160,Carla Mendes,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Em trânsito,PIX,2024-12-08,
-161,Nicolas Barbosa,MG,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Entregue,PIX,2024-06-28,2024-07-04
-162,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Débito,2024-05-27,2024-05-31
-163,João Oliveira,PR,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,Boleto,2024-04-04,2024-04-06
-164,Henrique Alves,MG,Tênis Vans,Calçados,5,279.9,1399.5,Pendente,,2024-09-25,
-165,Diego Souza,PR,Mochila Samsonite,Acessórios,3,259.9,779.7,Cancelado,Cartão de Débito,2024-11-06,
-166,Carla Mendes,GO,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Boleto,2024-12-12,2024-12-26
-167,Felipe Lima,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,Boleto,2024-03-26,2024-04-07
-168,Felipe Lima,PR,Tênis Nike Air Max,Calçados,2,349.9,699.8,Pendente,Boleto,2024-05-09,
-169,Isabela Martins,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Cartão de Débito,2024-02-24,
-170,Gabriela Rocha,SC,Mochila Samsonite,Acessórios,3,259.9,779.7,Cancelado,Cartão de Crédito,2024-11-19,
-171,João Oliveira,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Pendente,PIX,2024-01-27,
-173,Carla Mendes,RJ,Tênis Vans,Calçados,4,279.9,1119.6,Pendente,Boleto,2024-11-23,
-174,Isabela Martins,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-08-21,
-175,Ana Silva,GO,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Boleto,2024-12-20,2024-12-23
-176,Marina Gomes,RS,Mochila Samsonite,Acessórios,3,259.9,779.7,Em trânsito,Cartão de Débito,2024-11-16,
-177,Henrique Alves,PE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-07-17,
-178,Diego Souza,PE,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-05-22,2024-05-31
-179,Gabriela Rocha,PR,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Crédito,2024-06-25,
-180,Diego Souza,PE,Mochila Samsonite,Acessórios,3,259.9,779.7,Entregue,Boleto,2024-10-11,2024-11-20
-181,Bruno Costa,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-11-15,2024-11-27
-182,Bruno Costa,CE,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Boleto,2024-12-16,2024-12-27
-183,Diego Souza,GO,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Cartão de Débito,2024-03-14,
-184,Olivia Castro,SP,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,PIX,2024-05-28,
-185,João Oliveira,RJ,Tênis Vans,Calçados,1,279.9,279.9,Em trânsito,,2024-03-26,
-186,Felipe Lima,CE,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,Cartão de Crédito,2024-11-09,
-187,Lucas Pereira,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-08-31,2024-09-09
-188,Ana Silva,BA,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,PIX,2024-03-30,2024-04-10
-189,Felipe Lima,GO,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,PIX,2024-03-01,
-190,Olivia Castro,SC,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Pendente,,2024-12-20,
-191,Olivia Castro,RS,Relógio Casio,Acessórios,3,189.9,569.7,Pendente,Boleto,2024-10-02,
-192,Diego Souza,BA,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Crédito,2024-02-07,2024-07-17
-193,Felipe Lima,SC,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Cartão de Débito,2024-05-07,
-194,Karla Santos,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Cancelado,Cartão de Débito,2024-07-21,
-195,Gabriela Rocha,CE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Crédito,2024-11-08,2024-11-23
-196,Marina Gomes,SP,Camiseta Adidas,Vestuário,3,89.9,269.7,Em trânsito,Boleto,2024-09-25,
-197,Carla Mendes,BA,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Em trânsito,PIX,2024-05-16,
-199,,BA,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,PIX,2024-07-31,2024-08-12
-200,Felipe Lima,PE,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,Cartão de Débito,2024-01-20,2024-01-22
-201,Nicolas Barbosa,SC,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-02-13,2024-02-26
-202,Henrique Alves,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,PIX,2024-11-22,2024-12-07
-203,Gabriela Rocha,CE,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,PIX,2024-02-09,2024-09-09
-204,Diego Souza,PE,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,PIX,2024-01-08,
-205,Isabela Martins,PR,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Cartão de Débito,2024-02-22,
-206,Lucas Pereira,CE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-02-10,2024-10-16
-207,Ana Silva,RJ,Camiseta Adidas,Vestuário,3,89.9,269.7,Entregue,PIX,2024-08-16,2024-08-23
-208,Lucas Pereira,PR,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,Boleto,2024-12-08,
-209,Isabela Martins,PR,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Pendente,Cartão de Crédito,2024-05-05,
-211,Henrique Alves,SP,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Débito,2024-08-21,2024-09-01
-212,Ana Silva,CE,Camiseta Adidas,Vestuário,3,89.9,269.7,Cancelado,Cartão de Débito,2024-12-11,
-213,Lucas Pereira,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,Cartão de Débito,2024-06-25,2024-07-08
-215,Isabela Martins,BA,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-03-03,2024-03-18
-217,Gabriela Rocha,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Débito,2024-06-16,2024-06-18
-219,João Oliveira,BA,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,PIX,2024-06-14,2024-06-27
-220,Isabela Martins,BA,Tênis Vans,Calçados,4,279.9,1119.6,Pendente,Boleto,2024-06-29,
-221,Nicolas Barbosa,CE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-08-29,2024-09-12
-222,Felipe Lima,PE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-07-15,2024-07-28
-223,Nicolas Barbosa,RJ,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Em trânsito,Cartão de Débito,2024-06-23,
-225,Nicolas Barbosa,,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Entregue,Cartão de Crédito,2024-06-11,2024-11-19
-226,Felipe Lima,GO,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Cancelado,Boleto,2024-10-11,
-227,Diego Souza,CE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Crédito,2024-04-27,2024-04-30
-228,Gabriela Rocha,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,PIX,2024-06-02,2024-06-17
-229,Felipe Lima,BA,Tênis Nike Air Max,Calçados,1,349.9,349.9,Pendente,Boleto,2024-12-18,
-230,João Oliveira,SP,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Pendente,Cartão de Crédito,2024-04-16,
-231,Marina Gomes,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-02-15,2024-02-27
-232,Isabela Martins,RS,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-09-26,2024-10-04
-235,Diego Souza,GO,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Boleto,2024-08-27,2024-09-10
-237,Isabela Martins,SC,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,PIX,2024-09-24,2024-10-02
-238,Elena Ferreira,RS,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Pendente,PIX,2024-10-26,
-239,Karla Santos,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Em trânsito,Boleto,2024-03-18,
-240,Carla Mendes,SP,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Pendente,Cartão de Débito,2024-12-22,
-241,Ana Silva,RJ,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Entregue,Cartão de Débito,2024-05-09,2024-09-16
-242,Henrique Alves,RJ,Tênis Vans,Calçados,2,279.9,559.8,Cancelado,Cartão de Débito,2024-02-16,
-243,Bruno Costa,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Cancelado,Boleto,2024-10-29,
-244,Bruno Costa,BA,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Cancelado,Boleto,2024-02-06,
-245,Marina Gomes,MG,Mochila Samsonite,Acessórios,1,259.9,259.9,Cancelado,Cartão de Crédito,2024-08-03,
-246,Gabriela Rocha,PE,Camiseta Adidas,Vestuário,3,89.9,269.7,Cancelado,Boleto,2024-08-20,
-247,Nicolas Barbosa,CE,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Boleto,2024-08-13,
-248,Nicolas Barbosa,GO,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-04-24,2024-04-26
-249,Lucas Pereira,PR,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Em trânsito,PIX,2024-07-15,
-250,Lucas Pereira,GO,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Crédito,2024-08-22,
-251,Carla Mendes,RS,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Entregue,Cartão de Crédito,2024-10-15,2024-10-20
-254,Felipe Lima,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Boleto,2024-10-11,
-255,Gabriela Rocha,PE,Tênis Vans,Calçados,3,279.9,839.7,Pendente,Cartão de Crédito,2024-05-13,
-256,Karla Santos,RS,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,PIX,2024-11-27,2024-12-01
-258,Bruno Costa,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,PIX,2024-04-24,2024-05-09
-260,Bruno Costa,BA,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-05-25,
-261,Isabela Martins,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Cancelado,Cartão de Débito,2024-10-05,
-262,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,PIX,2024-09-15,2024-09-24
-263,Bruno Costa,SP,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Cancelado,PIX,2024-11-09,
-264,Olivia Castro,RS,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Débito,2024-03-27,2024-03-31
-265,Ana Silva,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Pendente,Boleto,2024-08-08,
-266,Diego Souza,PR,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-02-17,2024-02-29
-267,Karla Santos,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Entregue,Cartão de Crédito,2024-12-30,2025-01-14
-268,João Oliveira,SP,Camiseta Adidas,Vestuário,3,89.9,269.7,Entregue,Cartão de Débito,2024-07-22,2024-08-04
-269,Carla Mendes,PE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-08-24,2024-08-29
-270,Olivia Castro,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-05-20,2024-05-22
-272,Bruno Costa,RJ,Relógio Casio,Acessórios,1,189.9,189.9,Pendente,Cartão de Débito,2024-03-07,
-273,Felipe Lima,SP,Tênis Vans,Calçados,3,279.9,839.7,Entregue,Cartão de Débito,2024-06-06,2024-06-09
-274,Diego Souza,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-02-26,2024-03-01
-275,Diego Souza,PE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-05-05,2024-05-07
-276,Henrique Alves,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Crédito,2024-05-23,2024-05-31
-277,João Oliveira,PR,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Crédito,2024-10-12,2024-12-25
-279,Gabriela Rocha,SP,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Pendente,Boleto,2024-10-21,
-280,Nicolas Barbosa,SP,Tênis Vans,Calçados,1,279.9,279.9,Pendente,PIX,2024-03-26,
-281,Karla Santos,SC,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,PIX,2024-05-20,2024-05-26
-282,Henrique Alves,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,Cartão de Crédito,2024-02-22,2024-02-29
-283,Gabriela Rocha,RJ,Mochila Samsonite,Acessórios,1,259.9,259.9,Em trânsito,PIX,2024-06-27,
-284,João Oliveira,MG,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-06-25,2024-07-07
-285,Olivia Castro,MG,Tênis Vans,Calçados,4,279.9,1119.6,Cancelado,Cartão de Débito,2024-01-09,
-286,Henrique Alves,MG,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Cancelado,Cartão de Débito,2024-03-16,
-287,Elena Ferreira,PE,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,Cartão de Crédito,2024-12-15,
-288,Bruno Costa,GO,Tênis Vans,Calçados,3,279.9,839.7,Cancelado,Boleto,2024-10-26,
-289,Isabela Martins,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Crédito,2024-11-27,2024-12-02
-290,Henrique Alves,GO,Relógio Casio,Acessórios,4,189.9,759.6,Cancelado,Cartão de Débito,2024-03-27,
-291,Henrique Alves,GO,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Pendente,Cartão de Débito,2024-04-13,
-292,Bruno Costa,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,Boleto,2024-12-02,
-294,Diego Souza,BA,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-05-18,2024-06-02
-295,Nicolas Barbosa,SP,Tênis Vans,Calçados,3,279.9,839.7,Entregue,Cartão de Débito,2024-10-23,2024-11-03
-296,Ana Silva,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,PIX,2024-02-18,2024-02-27
-297,Diego Souza,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,PIX,2024-09-30,
-298,Lucas Pereira,PR,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Em trânsito,Cartão de Crédito,2024-11-16,
-299,Ana Silva,CE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Cancelado,Cartão de Crédito,2024-05-31,
-300,Karla Santos,PE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Cartão de Crédito,2024-02-21,
-301,Lucas Pereira,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,Boleto,2024-12-21,
-302,Carla Mendes,GO,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Pendente,Cartão de Crédito,2024-05-13,
-304,,SP,Tênis Vans,Calçados,3,279.9,839.7,Cancelado,Cartão de Débito,2024-03-17,
-306,Felipe Lima,BA,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Em trânsito,PIX,2024-09-28,
-307,Henrique Alves,PE,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Cancelado,Boleto,2024-04-09,
-308,Karla Santos,GO,Camiseta Adidas,Vestuário,3,89.9,269.7,Cancelado,Cartão de Crédito,2024-12-03,
-309,Felipe Lima,CE,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Boleto,2024-10-30,2024-11-06
-310,Ana Silva,SP,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Débito,2024-11-26,2024-12-10
-312,Lucas Pereira,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,PIX,2024-07-22,
-313,,PE,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,PIX,2024-08-13,2024-08-20
-314,Bruno Costa,CE,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-04-21,2024-04-26
-315,Gabriela Rocha,MG,Tênis Vans,Calçados,2,279.9,559.8,Em trânsito,PIX,2024-08-05,
-316,Nicolas Barbosa,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,Cartão de Crédito,2024-10-11,
-317,Nicolas Barbosa,MG,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Boleto,2024-10-31,2024-11-13
-319,Bruno Costa,BA,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-12-22,2024-12-27
-320,Marina Gomes,RJ,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Boleto,2024-01-28,
-321,Olivia Castro,SP,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-03-25,2024-03-29
-323,Carla Mendes,SP,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Em trânsito,PIX,2024-03-31,
-324,Bruno Costa,SP,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Em trânsito,PIX,2024-08-06,
-325,Karla Santos,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Cancelado,Cartão de Crédito,2024-04-01,
-326,Diego Souza,RJ,Tênis Vans,Calçados,2,279.9,559.8,Cancelado,Cartão de Débito,2024-11-10,
-327,Bruno Costa,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-07-18,2024-07-25
-328,Diego Souza,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Crédito,2024-02-13,
-330,João Oliveira,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,Cartão de Crédito,2024-12-07,
-331,Elena Ferreira,CE,Mochila Samsonite,Acessórios,3,259.9,779.7,Pendente,Cartão de Crédito,2024-10-03,
-332,Diego Souza,GO,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Pendente,Boleto,2024-10-25,
-333,Lucas Pereira,RS,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Cartão de Débito,2024-01-23,2024-01-30
-334,Ana Silva,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,,2024-01-21,2024-01-23
-335,Lucas Pereira,CE,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Em trânsito,Cartão de Crédito,2024-03-04,
-336,Henrique Alves,SC,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-11-30,2024-12-15
-337,Marina Gomes,CE,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,Boleto,2024-02-15,
-338,Felipe Lima,CE,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Em trânsito,Cartão de Crédito,2024-08-22,
-339,Carla Mendes,GO,Camiseta Adidas,Vestuário,4,89.9,359.6,Em trânsito,Cartão de Débito,2024-12-14,
-341,Karla Santos,CE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-07-14,2024-07-24
-342,Karla Santos,GO,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,PIX,2024-05-27,2024-06-05
-343,Marina Gomes,SP,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Débito,2024-03-15,2024-03-20
-344,Gabriela Rocha,MG,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Débito,2024-10-07,
-345,Bruno Costa,GO,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Débito,2024-11-28,2024-12-01
-346,Diego Souza,MG,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Cartão de Crédito,2024-09-16,2024-09-30
-347,Olivia Castro,CE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-12-15,2024-12-29
-348,Diego Souza,GO,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-02-27,2024-02-29
-350,Marina Gomes,GO,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Boleto,2024-06-14,2024-06-29
-351,Henrique Alves,PE,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Pendente,Cartão de Crédito,2024-05-14,
-352,Olivia Castro,MG,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Cancelado,PIX,2024-11-27,
-353,Diego Souza,GO,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,PIX,2024-02-11,2024-11-12
-354,Nicolas Barbosa,RJ,Tênis Vans,Calçados,3,279.9,839.7,Entregue,PIX,2024-05-19,
-355,Bruno Costa,RS,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,PIX,2024-10-23,2024-11-03
-356,Nicolas Barbosa,BA,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-10-27,2024-10-30
-358,Elena Ferreira,BA,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-03-20,2024-03-24
-359,Elena Ferreira,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Boleto,2024-01-29,
-361,Elena Ferreira,GO,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,PIX,2024-12-19,
-363,Elena Ferreira,RS,Tênis Nike Air Max,Calçados,1,349.9,349.9,Em trânsito,Cartão de Crédito,2024-10-06,
-365,Karla Santos,SC,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,PIX,2024-04-15,
-366,Olivia Castro,GO,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,Cartão de Débito,2024-01-12,
-367,Nicolas Barbosa,RJ,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Em trânsito,PIX,2024-03-12,
-368,Nicolas Barbosa,BA,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Cartão de Débito,2024-01-13,
-370,João Oliveira,PE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Cartão de Débito,2024-04-24,2024-05-09
-371,Felipe Lima,PE,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Em trânsito,PIX,2024-12-16,
-372,Carla Mendes,RS,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Débito,2024-10-25,2024-11-02
-373,João Oliveira,RS,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Pendente,PIX,2024-04-28,
-374,Marina Gomes,RS,Camiseta Adidas,Vestuário,2,89.9,179.8,Em trânsito,Boleto,2024-12-29,
-375,Ana Silva,PR,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Cancelado,Cartão de Crédito,2024-07-12,
-376,João Oliveira,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Pendente,PIX,2024-04-18,
-378,Olivia Castro,PE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,PIX,2024-03-25,2024-04-01
-379,Diego Souza,GO,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,PIX,2024-09-22,2024-10-04
-381,Lucas Pereira,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-12-29,2025-01-01
-382,Karla Santos,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Cartão de Débito,2024-11-13,
-383,Isabela Martins,RS,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Cartão de Crédito,2024-03-13,2024-03-26
-384,Henrique Alves,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Em trânsito,Cartão de Crédito,2024-03-25,
-385,Felipe Lima,CE,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Em trânsito,Boleto,2024-01-05,
-388,Felipe Lima,PE,Camiseta Adidas,Vestuário,3,89.9,269.7,Entregue,Boleto,2024-10-20,2024-10-25
-389,Nicolas Barbosa,SC,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Débito,2024-08-12,2024-12-11
-390,Isabela Martins,SP,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,Cartão de Débito,2024-01-17,
-392,Diego Souza,CE,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-01-24,2024-01-26
-393,Henrique Alves,CE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-04-09,2024-09-07
-394,Isabela Martins,SC,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Boleto,2024-12-25,2025-01-08
-395,Nicolas Barbosa,BA,Mochila Samsonite,Acessórios,4,259.9,1039.6,Cancelado,Boleto,2024-11-06,
-396,Diego Souza,GO,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,Boleto,2024-02-20,
-397,Henrique Alves,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Cancelado,Cartão de Débito,2024-09-27,
-398,Marina Gomes,MG,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Crédito,2024-06-26,2024-07-05
-399,Isabela Martins,MG,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-04-18,2024-04-28
-400,Marina Gomes,MG,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,PIX,2024-03-07,2024-03-12
-401,Felipe Lima,SC,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-03-15,2024-03-17
-402,Elena Ferreira,RJ,Relógio Casio,Acessórios,3,189.9,569.7,Cancelado,PIX,2024-01-27,
-403,Felipe Lima,SC,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Pendente,Boleto,2024-06-29,
-404,Nicolas Barbosa,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Pendente,Cartão de Crédito,2024-04-18,
-405,Karla Santos,BA,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-09-12,2024-12-21
-406,Isabela Martins,SC,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Crédito,2024-09-25,2024-09-29
-407,João Oliveira,BA,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,PIX,2024-06-12,2024-12-18
-408,Olivia Castro,RJ,Camiseta Adidas,Vestuário,2,89.9,179.8,Em trânsito,Cartão de Débito,2024-06-28,
-409,Elena Ferreira,GO,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-03-27,2024-03-31
-410,Elena Ferreira,GO,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Cancelado,PIX,2024-05-19,
-413,Ana Silva,PE,Tênis Vans,Calçados,3,279.9,839.7,Pendente,Cartão de Crédito,2024-09-03,
-414,Felipe Lima,SC,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Boleto,2024-05-13,
-415,Nicolas Barbosa,GO,Mochila Samsonite,Acessórios,1,259.9,259.9,Em trânsito,Cartão de Débito,2024-08-09,
-416,Felipe Lima,MG,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-05-20,2024-05-22
-417,Bruno Costa,RS,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Boleto,2024-12-24,2024-12-30
-418,Diego Souza,RJ,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Boleto,2024-04-08,
-419,Lucas Pereira,BA,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-09-12,2024-12-12
-420,João Oliveira,SP,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-02-13,2024-02-18
-421,João Oliveira,PR,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Crédito,2024-11-20,2024-12-04
-422,Gabriela Rocha,GO,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Entregue,Cartão de Débito,2024-06-19,2024-06-26
-423,Olivia Castro,GO,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Boleto,2024-03-03,2024-03-05
-426,Karla Santos,PR,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Cartão de Crédito,2024-08-26,2024-09-01
-427,Carla Mendes,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,,2024-06-16,2024-06-21
-428,Henrique Alves,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-12-19,2024-12-22
-429,Gabriela Rocha,BA,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Cancelado,Cartão de Débito,2024-10-21,
-430,Nicolas Barbosa,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Débito,2024-04-18,2024-04-27
-431,Marina Gomes,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-02-15,2024-02-27
-432,Carla Mendes,SC,Tênis Vans,Calçados,1,279.9,279.9,Pendente,PIX,2024-08-18,
-433,Gabriela Rocha,CE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-02-05,2024-05-04
-434,Nicolas Barbosa,PR,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Boleto,2024-04-22,
-435,Ana Silva,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Cartão de Crédito,2024-12-12,2024-12-25
-436,Isabela Martins,MG,Camiseta Adidas,Vestuário,5,89.9,449.5,Pendente,PIX,2024-03-28,
-438,Lucas Pereira,PR,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-03-24,2024-03-30
-439,Lucas Pereira,RS,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Boleto,2024-04-10,2024-10-13
-440,Lucas Pereira,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Em trânsito,Cartão de Crédito,2024-01-15,
-441,Olivia Castro,SP,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Em trânsito,PIX,2024-12-25,
-442,Nicolas Barbosa,MG,Camiseta Adidas,Vestuário,3,89.9,269.7,Entregue,Cartão de Débito,2024-05-27,2024-06-08
-443,Felipe Lima,PE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-07-21,2024-08-05
-444,Karla Santos,SC,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Em trânsito,Boleto,2024-05-06,
-445,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,PIX,2024-08-25,
-446,Karla Santos,BA,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Boleto,2024-04-24,
-447,Diego Souza,SP,Tênis Nike Air Max,Calçados,3,349.9,1049.7,Entregue,Cartão de Crédito,2024-04-18,2024-04-29
-448,Henrique Alves,CE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-05-27,2024-06-09
-449,João Oliveira,SP,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Crédito,2024-10-31,2024-11-02
-450,Karla Santos,PR,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Crédito,2024-12-26,
-451,Diego Souza,RJ,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Débito,2024-03-29,
-452,Nicolas Barbosa,PE,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,PIX,2024-01-11,
-453,João Oliveira,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Em trânsito,Cartão de Crédito,2024-03-12,
-454,Diego Souza,BA,Camiseta Adidas,Vestuário,3,89.9,269.7,Entregue,Cartão de Crédito,2024-05-11,2024-11-09
-455,Nicolas Barbosa,RJ,Tênis Nike Air Max,Calçados,1,349.9,349.9,Em trânsito,Cartão de Débito,2024-11-03,
-456,Karla Santos,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-04-22,2024-05-03
-457,Carla Mendes,CE,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-02-09,2024-09-12
-458,Isabela Martins,PR,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Em trânsito,Cartão de Débito,2024-12-25,
-459,Nicolas Barbosa,PE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-07-30,2024-08-06
-460,Isabela Martins,PE,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,Boleto,2024-05-10,2024-10-20
-461,Gabriela Rocha,PE,Camiseta Adidas,Vestuário,4,89.9,359.6,Pendente,PIX,2024-10-25,
-462,Nicolas Barbosa,PE,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-03-23,2024-04-02
-463,Isabela Martins,SC,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-01-10,2024-10-07
-465,Felipe Lima,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Boleto,2024-09-03,
-466,Isabela Martins,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Em trânsito,Cartão de Débito,2024-12-01,
-467,Olivia Castro,PE,Óculos Ray-Ban,Acessórios,3,449.9,1349.7,Pendente,PIX,2024-11-27,
-468,Gabriela Rocha,PE,Tênis Vans,Calçados,4,279.9,1119.6,Em trânsito,Cartão de Débito,2024-08-18,
-469,Marina Gomes,PR,Tênis Vans,Calçados,3,279.9,839.7,Entregue,,2024-03-21,2024-03-30
-470,Bruno Costa,BA,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-02-06,2024-06-12
-472,Olivia Castro,SP,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-04-30,2024-05-08
-473,Ana Silva,SC,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-01-07,2024-07-15
-474,Felipe Lima,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-11-28,2024-12-05
-475,Marina Gomes,RS,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Em trânsito,Cartão de Crédito,2024-09-26,
-476,Bruno Costa,MG,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Entregue,Boleto,2024-10-12,2024-10-19
-478,Elena Ferreira,SP,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Cartão de Débito,2024-05-07,
-479,Ana Silva,BA,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-02-10,
-480,,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,Boleto,2024-12-10,
-481,Elena Ferreira,BA,Relógio Casio,Acessórios,2,189.9,379.8,Pendente,Cartão de Débito,2024-11-23,
-482,Olivia Castro,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Crédito,2024-02-27,2024-03-05
-483,João Oliveira,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-01-04,2024-04-06
-485,Nicolas Barbosa,PE,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,Cartão de Débito,2024-04-10,
-486,,PR,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Boleto,2024-01-24,
-487,Henrique Alves,PR,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Cartão de Débito,2024-04-09,
-488,Carla Mendes,CE,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,Cartão de Débito,2024-11-25,2024-12-09
-490,Karla Santos,SP,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Pendente,Boleto,2024-09-01,
-491,Ana Silva,BA,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Entregue,PIX,2024-09-09,2024-09-19
-492,João Oliveira,PR,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Débito,2024-06-25,2024-07-08
-493,Gabriela Rocha,BA,Tênis Nike Air Max,Calçados,2,349.9,699.8,Pendente,Boleto,2024-08-17,
-494,Bruno Costa,MG,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Cancelado,Boleto,2024-07-14,
-495,Isabela Martins,PE,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,PIX,2024-05-17,2024-05-30
-496,Marina Gomes,RJ,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,Cartão de Débito,2024-04-23,
-498,Gabriela Rocha,BA,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Crédito,2024-01-14,2024-01-27
-499,Diego Souza,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-07-28,2024-08-09
-500,Karla Santos,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Cancelado,PIX,2024-09-05,
-503,Marina Gomes,RS,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-08-31,
-504,Bruno Costa,BA,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,PIX,2024-01-21,2024-01-26
-505,Diego Souza,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Pendente,Cartão de Débito,2024-02-26,
-507,Carla Mendes,CE,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-10-27,2024-11-01
-508,Nicolas Barbosa,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,Cartão de Crédito,2024-07-11,
-509,Ana Silva,SC,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Pendente,Cartão de Débito,2024-05-26,
-510,Ana Silva,PE,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-08-24,2024-08-27
+pedido_id,cliente,estado,produto,categoria,quantidade,valor_unitario,valor_total,status,pagamento,data_pedido,data_entrega,valor_total_original,dias_entrega,mes,ano,pedido_valido
+1,Diego Souza,RJ,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Entregue,Cartão de Débito,2024-11-27,,779.7,,11.0,2024.0,True
+2,Lucas Pereira,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Boleto,2024-10-14,,519.8,,10.0,2024.0,True
+3,Marina Gomes,PE,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Cancelado,Cartão de Débito,2024-03-17,,599.7,,3.0,2024.0,False
+4,Henrique Alves,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Cancelado,Boleto,2024-07-09,,4495.0,,7.0,2024.0,False
+5,João Oliveira,RJ,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Cancelado,Boleto,2024-05-13,,1399.6,,5.0,2024.0,False
+6,Bruno Costa,RJ,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-11-05,,1299.5,,11.0,2024.0,True
+7,Lucas Pereira,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Débito,2024-10-25,,13196.0,,10.0,2024.0,True
+8,Lucas Pereira,GO,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Cartão de Crédito,,,24742.5,,,,False
+9,Felipe Lima,PE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-02-10,,2697.0,,2.0,2024.0,True
+10,Felipe Lima,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,PIX,2024-05-15,,1749.5,,5.0,2024.0,True
+11,Elena Ferreira,BA,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-03-30,,259.9,,3.0,2024.0,True
+12,Diego Souza,PR,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-11-23,,259.9,,11.0,2024.0,True
+13,Isabela Martins,CE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-11-10,2024-12-11,189.9,31.0,11.0,2024.0,True
+14,Elena Ferreira,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,Não informado,2024-10-16,,1749.5,,10.0,2024.0,True
+15,Isabela Martins,PR,Camiseta Adidas,Vestuário,5,89.9,449.5,Em trânsito,Boleto,2024-10-22,,449.5,,10.0,2024.0,True
+16,Felipe Lima,PR,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Entregue,PIX,2024-10-16,,779.7,,10.0,2024.0,True
+17,Isabela Martins,PR,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Cartão de Débito,2024-02-20,2024-05-03,1799.6,73.0,2.0,2024.0,True
+18,Carla Mendes,RJ,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-07-27,,179.8,,7.0,2024.0,True
+19,Nicolas Barbosa,BA,Tênis Nike Air Max,Calçados,1,349.9,349.9,Cancelado,PIX,2024-05-04,,349.9,,5.0,2024.0,False
+20,Henrique Alves,SP,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,Boleto,2024-02-25,,199.9,,2.0,2024.0,True
+21,Carla Mendes,BA,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Entregue,Cartão de Crédito,2024-10-20,,899.8,,10.0,2024.0,True
+22,Lucas Pereira,MG,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Crédito,2024-04-12,,9897.0,,4.0,2024.0,True
+23,Felipe Lima,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-12-23,,399.8,,12.0,2024.0,True
+24,Nicolas Barbosa,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Débito,2024-09-17,,949.5,,9.0,2024.0,True
+25,Marina Gomes,GO,Mochila Samsonite,Acessórios,4,259.9,1039.6,Entregue,Cartão de Débito,2024-08-09,,1039.6,,8.0,2024.0,True
+26,Lucas Pereira,Não informado,Mochila Samsonite,Acessórios,1,259.9,259.9,Cancelado,Boleto,2024-11-16,,259.9,,11.0,2024.0,False
+27,Ana Silva,BA,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Boleto,2024-01-30,,16495.0,,1.0,2024.0,True
+28,Isabela Martins,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Pendente,Cartão de Débito,2024-04-09,,599.7,,4.0,2024.0,True
+29,Olivia Castro,MG,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-10-25,,449.5,,10.0,2024.0,True
+30,Karla Santos,MG,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Cancelado,Cartão de Débito,2024-04-21,,799.6,,4.0,2024.0,False
+31,João Oliveira,MG,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Pendente,Cartão de Crédito,2024-12-10,,2697.0,,12.0,2024.0,True
+32,Elena Ferreira,GO,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,PIX,2024-11-16,,199.9,,11.0,2024.0,True
+33,Felipe Lima,SC,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Crédito,2024-10-10,,1798.0,,10.0,2024.0,True
+34,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Crédito,2024-08-18,,9897.0,,8.0,2024.0,True
+35,Lucas Pereira,RJ,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Cancelado,Boleto,2024-02-10,,199.9,,2.0,2024.0,False
+36,Isabela Martins,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,Cartão de Crédito,2024-07-18,,89.9,,7.0,2024.0,True
+37,Felipe Lima,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-11-11,,399.8,,11.0,2024.0,True
+38,Diego Souza,PR,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,PIX,2024-07-06,,199.9,,7.0,2024.0,True
+39,Bruno Costa,RS,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Pendente,Cartão de Crédito,2024-06-19,,4495.0,,6.0,2024.0,True
+40,Elena Ferreira,RJ,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Cartão de Crédito,2024-03-21,,399.8,,3.0,2024.0,True
+41,Ana Silva,PR,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,PIX,2024-10-02,,1399.6,,10.0,2024.0,True
+42,Henrique Alves,GO,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Boleto,2024-11-07,,89.9,,11.0,2024.0,True
+43,Marina Gomes,SC,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-03-21,,599.7,,3.0,2024.0,True
+44,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Em trânsito,Cartão de Crédito,2024-01-26,,799.6,,1.0,2024.0,True
+45,Marina Gomes,SP,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,PIX,2024-01-11,,89.9,,1.0,2024.0,True
+46,João Oliveira,SP,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Cartão de Débito,2024-08-12,,1798.0,,8.0,2024.0,False
+47,Felipe Lima,RS,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Boleto,2024-03-02,2024-05-03,1119.6,62.0,3.0,2024.0,True
+48,João Oliveira,PR,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Cancelado,Cartão de Crédito,,,399.8,,,,False
+49,Nicolas Barbosa,RJ,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Débito,2024-09-25,,399.8,,9.0,2024.0,True
+50,Henrique Alves,PR,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,Boleto,2024-10-05,,449.9,,10.0,2024.0,True
+51,Isabela Martins,CE,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,Boleto,2024-03-19,,1299.5,,3.0,2024.0,False
+52,Isabela Martins,SC,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Cartão de Crédito,2024-08-18,,1799.6,,8.0,2024.0,True
+53,Henrique Alves,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Crédito,2024-08-21,,1399.5,,8.0,2024.0,True
+54,Elena Ferreira,PR,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,PIX,2024-06-10,,1348.5,,6.0,2024.0,True
+55,Felipe Lima,CE,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,PIX,2024-09-01,,519.8,,9.0,2024.0,True
+56,Nicolas Barbosa,RJ,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,Boleto,2024-07-06,,1399.6,,7.0,2024.0,True
+57,Nicolas Barbosa,PR,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,PIX,2024-11-22,,199.9,,11.0,2024.0,True
+58,Nicolas Barbosa,GO,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-01-17,,449.5,,1.0,2024.0,True
+59,Henrique Alves,RJ,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Em trânsito,Cartão de Débito,2024-11-01,,449.9,,11.0,2024.0,True
+60,Marina Gomes,SC,Camiseta Adidas,Vestuário,5,89.9,449.5,Em trânsito,Cartão de Crédito,2024-12-02,,449.5,,12.0,2024.0,True
+61,Bruno Costa,PE,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,Boleto,2024-03-08,,449.9,,3.0,2024.0,True
+62,Diego Souza,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Cancelado,Boleto,2024-07-15,,1799.6,,7.0,2024.0,False
+63,Isabela Martins,SP,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Cartão de Débito,2024-02-22,2024-06-03,759.6,102.0,2.0,2024.0,True
+64,Elena Ferreira,MG,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Boleto,2024-11-09,,759.6,,11.0,2024.0,True
+65,Isabela Martins,GO,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Cartão de Débito,2024-06-12,,759.6,,6.0,2024.0,True
+66,Gabriela Rocha,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Cancelado,Boleto,2024-08-30,,599.7,,8.0,2024.0,False
+67,Bruno Costa,PE,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,PIX,2024-10-01,,519.8,,10.0,2024.0,True
+68,Carla Mendes,Não informado,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,PIX,2024-11-04,,259.9,,11.0,2024.0,True
+69,Marina Gomes,PR,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Boleto,2024-03-16,,16495.0,,3.0,2024.0,True
+70,Bruno Costa,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Débito,2024-12-24,,519.8,,12.0,2024.0,True
+71,Diego Souza,MG,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Em trânsito,Cartão de Débito,2024-09-07,,9897.0,,9.0,2024.0,True
+72,Olivia Castro,PR,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Em trânsito,Boleto,2024-02-17,,6598.0,,2.0,2024.0,True
+73,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Débito,2024-02-01,,-50.0,,2.0,2024.0,True
+74,Gabriela Rocha,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Boleto,2024-06-28,,599.7,,6.0,2024.0,True
+75,Não informado,SC,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,Boleto,2024-12-06,,899.0,,12.0,2024.0,True
+76,Felipe Lima,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Boleto,2024-08-31,,519.8,,8.0,2024.0,True
+77,Lucas Pereira,SC,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Pendente,PIX,2024-09-10,,3596.0,,9.0,2024.0,True
+78,Elena Ferreira,PE,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,PIX,2024-12-10,,449.5,,12.0,2024.0,True
+79,Elena Ferreira,SP,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,Boleto,2024-05-22,,899.8,,5.0,2024.0,False
+80,Lucas Pereira,SC,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,Boleto,2024-09-28,,379.8,,9.0,2024.0,True
+81,Olivia Castro,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-06-05,,2697.0,,6.0,2024.0,True
+82,Marina Gomes,SC,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Boleto,2024-11-24,,999.5,,11.0,2024.0,True
+83,Nicolas Barbosa,MG,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Pendente,Cartão de Débito,2024-05-31,,779.7,,5.0,2024.0,True
+84,Lucas Pereira,SC,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Débito,2024-07-12,,1798.0,,7.0,2024.0,True
+85,Isabela Martins,Não informado,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,Boleto,2024-04-29,,199.9,,4.0,2024.0,True
+86,Felipe Lima,BA,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Cartão de Débito,2024-05-09,,3596.0,,5.0,2024.0,True
+87,Carla Mendes,RJ,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,PIX,2024-05-04,,1299.5,,5.0,2024.0,False
+88,Marina Gomes,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Débito,2024-12-04,,89.9,,12.0,2024.0,True
+89,Isabela Martins,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Boleto,2024-06-06,2024-12-06,599.7,183.0,6.0,2024.0,True
+90,Isabela Martins,MG,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,PIX,2024-08-30,,999.5,,8.0,2024.0,True
+91,Gabriela Rocha,Não informado,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Crédito,2024-07-02,2024-07-07,3299.0,5.0,7.0,2024.0,True
+92,Lucas Pereira,GO,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Cartão de Crédito,2024-02-17,,799.6,,2.0,2024.0,True
+93,Ana Silva,PR,Camiseta Adidas,Vestuário,4,89.9,359.6,Em trânsito,Cartão de Débito,2024-05-07,,359.6,,5.0,2024.0,True
+94,Marina Gomes,MG,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-05-21,,559.8,,5.0,2024.0,True
+95,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-07-14,,16495.0,,7.0,2024.0,True
+96,Não informado,GO,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Cancelado,Cartão de Crédito,2024-01-10,,13196.0,,1.0,2024.0,False
+97,Ana Silva,MG,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Cancelado,Boleto,2024-06-22,,779.7,,6.0,2024.0,False
+98,Henrique Alves,SC,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-11-14,,279.9,,11.0,2024.0,True
+99,Felipe Lima,PR,Camiseta Adidas,Vestuário,1,89.9,89.9,Cancelado,Cartão de Crédito,,,89.9,,,,False
+100,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,Cartão de Débito,2024-11-09,,4495.0,,11.0,2024.0,True
+101,Marina Gomes,MG,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-01-18,,-199.9,,1.0,2024.0,True
+102,Olivia Castro,PR,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Boleto,2024-12-24,2025-01-01,1799.6,8.0,12.0,2024.0,True
+103,Karla Santos,RS,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Cancelado,PIX,,,1349.7,,,,False
+104,Nicolas Barbosa,PE,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Boleto,2024-08-31,,1399.5,,8.0,2024.0,True
+105,João Oliveira,RS,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Boleto,2024-01-04,2024-12-01,1799.6,332.0,1.0,2024.0,True
+106,João Oliveira,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Débito,2024-04-22,,1399.5,,4.0,2024.0,True
+107,Ana Silva,PR,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Cancelado,Boleto,2024-05-25,,1749.5,,5.0,2024.0,False
+108,Lucas Pereira,BA,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-09-20,,759.6,,9.0,2024.0,True
+109,Isabela Martins,BA,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Pendente,PIX,2024-02-21,,4495.0,,2.0,2024.0,True
+110,Diego Souza,CE,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Boleto,2024-05-16,,999.5,,5.0,2024.0,True
+111,Marina Gomes,SP,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Entregue,Cartão de Débito,2024-09-29,,1049.7,,9.0,2024.0,True
+112,Gabriela Rocha,RS,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Crédito,2024-08-18,,9897.0,,8.0,2024.0,True
+113,Isabela Martins,GO,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,PIX,2024-03-07,,349.9,,3.0,2024.0,True
+114,Marina Gomes,CE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Boleto,2024-08-11,,559.8,,8.0,2024.0,True
+115,Bruno Costa,PE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Débito,2024-06-23,,699.8,,6.0,2024.0,True
+116,Carla Mendes,GO,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Crédito,2024-02-17,,189.9,,2.0,2024.0,True
+117,Não informado,GO,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-12-16,,799.6,,12.0,2024.0,True
+118,Ana Silva,PE,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,PIX,2024-05-29,2024-06-06,1399.5,8.0,5.0,2024.0,True
+119,Gabriela Rocha,RJ,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Boleto,2024-01-15,,89.9,,1.0,2024.0,True
+120,Karla Santos,SC,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Entregue,Boleto,2024-10-10,,779.7,,10.0,2024.0,True
+121,Gabriela Rocha,SC,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Cancelado,Boleto,2024-07-26,,399.8,,7.0,2024.0,False
+122,Ana Silva,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,PIX,2024-07-05,,999.5,,7.0,2024.0,False
+123,Gabriela Rocha,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Cartão de Crédito,2024-04-22,,3596.0,,4.0,2024.0,True
+124,Isabela Martins,BA,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Pendente,Cartão de Crédito,2024-02-01,,899.0,,2.0,2024.0,True
+125,Diego Souza,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,PIX,2024-11-04,,6598.0,,11.0,2024.0,True
+126,Não informado,RS,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Pendente,PIX,2024-07-30,,6598.0,,7.0,2024.0,True
+127,Felipe Lima,SP,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-07-04,,0.0,,7.0,2024.0,True
+128,Gabriela Rocha,RJ,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Crédito,,2024-12-11,279.9,,,,True
+129,Marina Gomes,RJ,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,PIX,2024-04-25,,759.6,,4.0,2024.0,True
+130,Bruno Costa,PE,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,Cartão de Débito,2024-12-10,,379.8,,12.0,2024.0,True
+131,Gabriela Rocha,BA,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Cancelado,Cartão de Débito,2024-03-06,,1399.6,,3.0,2024.0,False
+132,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Boleto,2024-03-24,,799.6,,3.0,2024.0,True
+133,Lucas Pereira,BA,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,PIX,2024-11-06,,13196.0,,11.0,2024.0,True
+134,Bruno Costa,CE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,PIX,2024-05-01,2024-07-05,999.5,65.0,5.0,2024.0,True
+135,Nicolas Barbosa,PR,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Entregue,PIX,2024-02-09,,599.7,,2.0,2024.0,True
+136,Não informado,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,PIX,2024-07-10,,6598.0,,7.0,2024.0,True
+137,João Oliveira,SC,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Entregue,Boleto,2024-04-03,2024-12-04,1349.7,245.0,4.0,2024.0,True
+138,Henrique Alves,SP,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Boleto,2024-04-24,2024-06-05,449.5,42.0,4.0,2024.0,True
+139,João Oliveira,RJ,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Boleto,2024-04-26,,699.8,,4.0,2024.0,False
+140,Ana Silva,Não informado,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Débito,2024-05-26,,569.7,,5.0,2024.0,True
+141,João Oliveira,SC,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-06-27,,1899.0,,6.0,2024.0,True
+142,João Oliveira,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Cartão de Débito,,,519.8,,,,True
+143,Elena Ferreira,SP,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Cartão de Crédito,2024-08-12,,799.6,,8.0,2024.0,True
+144,Lucas Pereira,Não informado,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Cancelado,Cartão de Crédito,2024-01-26,,449.9,,1.0,2024.0,False
+145,Bruno Costa,PE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,PIX,2024-05-29,2024-09-06,1139.4,100.0,5.0,2024.0,True
+146,Nicolas Barbosa,BA,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,PIX,,,16495.0,,,,False
+147,Carla Mendes,PE,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,Cartão de Crédito,2024-08-13,,1749.5,,8.0,2024.0,True
+148,Olivia Castro,BA,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,PIX,2024-02-26,,3299.0,,2.0,2024.0,True
+149,João Oliveira,MG,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,Boleto,2024-03-24,,799.6,,3.0,2024.0,True
+150,Marina Gomes,RS,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-01-13,,559.8,,1.0,2024.0,True
+151,Ana Silva,RJ,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Em trânsito,PIX,2024-09-02,,899.8,,9.0,2024.0,True
+152,Isabela Martins,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Débito,2024-08-04,2024-08-08,13196.0,4.0,8.0,2024.0,True
+153,Elena Ferreira,GO,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-07-24,,279.9,,7.0,2024.0,True
+154,Henrique Alves,SC,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,Cartão de Débito,2024-09-10,,449.5,,9.0,2024.0,True
+155,Marina Gomes,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-11-01,,16495.0,,11.0,2024.0,True
+156,Olivia Castro,PR,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,PIX,2024-11-24,,189.9,,11.0,2024.0,True
+157,Lucas Pereira,CE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Débito,2024-07-18,,699.8,,7.0,2024.0,True
+158,Lucas Pereira,PE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,Boleto,2024-04-21,,799.6,,4.0,2024.0,True
+159,Ana Silva,SC,Tênis Vans,Calçados,1,279.9,279.9,Em trânsito,Boleto,2024-06-08,,279.9,,6.0,2024.0,True
+160,Carla Mendes,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Em trânsito,PIX,2024-08-12,,399.8,,8.0,2024.0,True
+161,Nicolas Barbosa,MG,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Entregue,PIX,2024-06-28,,1349.7,,6.0,2024.0,True
+162,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Débito,2024-05-27,,1798.0,,5.0,2024.0,True
+163,João Oliveira,PR,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,Boleto,2024-04-04,2024-06-04,1399.6,61.0,4.0,2024.0,True
+164,Henrique Alves,MG,Tênis Vans,Calçados,5,279.9,1399.5,Pendente,Não informado,2024-09-25,,1399.5,,9.0,2024.0,True
+165,Diego Souza,PR,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Cancelado,Cartão de Débito,2024-06-11,,779.7,,6.0,2024.0,False
+166,Carla Mendes,GO,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Boleto,2024-12-12,,949.5,,12.0,2024.0,True
+167,Felipe Lima,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,Boleto,2024-03-26,2024-07-04,6598.0,100.0,3.0,2024.0,True
+168,Felipe Lima,PR,Tênis Nike Air Max,Calçados,2,349.9,699.8,Pendente,Boleto,2024-09-05,,699.8,,9.0,2024.0,True
+169,Isabela Martins,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Cartão de Débito,2024-02-24,,89.9,,2.0,2024.0,True
+170,Gabriela Rocha,SC,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Cancelado,Cartão de Crédito,2024-11-19,,779.7,,11.0,2024.0,False
+171,João Oliveira,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Pendente,PIX,2024-01-27,,1049.7,,1.0,2024.0,True
+172,Henrique Alves,PE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,PIX,2024-03-07,,2697.0,,3.0,2024.0,True
+173,Carla Mendes,RJ,Tênis Vans,Calçados,4,279.9,1119.6,Pendente,Boleto,2024-11-23,,1119.6,,11.0,2024.0,True
+174,Isabela Martins,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-08-21,,2697.0,,8.0,2024.0,True
+175,Ana Silva,GO,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Boleto,2024-12-20,,559.8,,12.0,2024.0,True
+176,Marina Gomes,RS,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Em trânsito,Cartão de Débito,2024-11-16,,779.7,,11.0,2024.0,True
+177,Henrique Alves,PE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-07-17,,759.6,,7.0,2024.0,True
+178,Diego Souza,PE,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-05-22,,799.6,,5.0,2024.0,True
+179,Gabriela Rocha,PR,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Crédito,2024-06-25,,1798.0,,6.0,2024.0,True
+180,Diego Souza,PE,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Entregue,Boleto,2024-11-10,,779.7,,11.0,2024.0,True
+181,Bruno Costa,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-11-15,,1299.5,,11.0,2024.0,True
+182,Bruno Costa,CE,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Boleto,2024-12-16,,399.8,,12.0,2024.0,True
+183,Diego Souza,GO,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Cartão de Débito,2024-03-14,,759.6,,3.0,2024.0,True
+184,Olivia Castro,SP,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,PIX,2024-05-28,,13196.0,,5.0,2024.0,True
+185,João Oliveira,RJ,Tênis Vans,Calçados,1,279.9,279.9,Em trânsito,Não informado,2024-03-26,,279.9,,3.0,2024.0,True
+186,Felipe Lima,CE,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,Cartão de Crédito,2024-09-11,,899.8,,9.0,2024.0,False
+187,Lucas Pereira,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-08-31,2024-09-09,16495.0,9.0,8.0,2024.0,True
+188,Ana Silva,BA,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,PIX,2024-03-30,2024-10-04,9897.0,188.0,3.0,2024.0,True
+189,Felipe Lima,GO,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,PIX,2024-01-03,,199.9,,1.0,2024.0,False
+190,Olivia Castro,SC,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Pendente,Não informado,2024-12-20,,5394.0,,12.0,2024.0,True
+191,Olivia Castro,RS,Relógio Casio,Acessórios,3,189.9,569.7,Pendente,Boleto,2024-02-10,,569.7,,2.0,2024.0,True
+192,Diego Souza,BA,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Crédito,2024-07-02,,3299.0,,7.0,2024.0,True
+193,Felipe Lima,SC,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Cartão de Débito,2024-07-05,,599.7,,7.0,2024.0,True
+194,Karla Santos,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Cancelado,Cartão de Débito,2024-07-21,,399.8,,7.0,2024.0,False
+195,Gabriela Rocha,CE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Crédito,,,559.8,,,,True
+196,Marina Gomes,SP,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Em trânsito,Boleto,2024-09-25,,269.7,,9.0,2024.0,True
+197,Carla Mendes,BA,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Em trânsito,PIX,2024-05-16,,1399.6,,5.0,2024.0,True
+198,Isabela Martins,RS,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Boleto,2024-02-06,,999.5,,2.0,2024.0,True
+199,Não informado,BA,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,PIX,2024-07-31,2024-12-08,999.5,130.0,7.0,2024.0,True
+200,Felipe Lima,PE,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,Cartão de Débito,2024-01-20,,349.9,,1.0,2024.0,True
+201,Nicolas Barbosa,SC,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-02-13,,189.9,,2.0,2024.0,True
+202,Henrique Alves,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,PIX,2024-11-22,,949.5,,11.0,2024.0,True
+203,Gabriela Rocha,CE,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,PIX,2024-09-02,2024-09-09,379.8,7.0,9.0,2024.0,True
+204,Diego Souza,PE,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Pendente,PIX,2024-08-01,,449.9,,8.0,2024.0,True
+205,Isabela Martins,PR,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Cartão de Débito,2024-02-22,,699.8,,2.0,2024.0,False
+206,Lucas Pereira,CE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-10-02,,2697.0,,10.0,2024.0,True
+207,Ana Silva,RJ,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Entregue,PIX,2024-08-16,,269.7,,8.0,2024.0,True
+208,Lucas Pereira,PR,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,Boleto,2024-08-12,,799.6,,8.0,2024.0,True
+209,Isabela Martins,PR,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Pendente,Cartão de Crédito,2024-05-05,,399.8,,5.0,2024.0,True
+210,Marina Gomes,RS,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Entregue,PIX,2024-09-12,,1399.6,,9.0,2024.0,True
+211,Henrique Alves,SP,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Débito,2024-08-21,,1119.6,,8.0,2024.0,True
+212,Ana Silva,CE,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Cancelado,Cartão de Débito,2024-11-12,,269.7,,11.0,2024.0,False
+213,Lucas Pereira,RS,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,Cartão de Débito,2024-06-25,2024-08-07,1749.5,43.0,6.0,2024.0,True
+214,Isabela Martins,SP,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Cartão de Crédito,2024-02-12,,1799.6,,2.0,2024.0,True
+215,Isabela Martins,BA,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-03-03,,189.9,,3.0,2024.0,True
+216,Felipe Lima,RJ,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-01-12,,999.5,,1.0,2024.0,True
+217,Gabriela Rocha,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Débito,2024-06-16,,89.9,,6.0,2024.0,True
+218,Nicolas Barbosa,PE,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,Boleto,2024-05-09,,199.9,,5.0,2024.0,True
+219,João Oliveira,BA,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Entregue,PIX,2024-06-14,,1749.5,,6.0,2024.0,True
+220,Isabela Martins,BA,Tênis Vans,Calçados,4,279.9,1119.6,Pendente,Boleto,2024-06-29,,1119.6,,6.0,2024.0,True
+221,Nicolas Barbosa,CE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-08-29,2024-12-09,799.6,102.0,8.0,2024.0,True
+222,Felipe Lima,PE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-07-15,,189.9,,7.0,2024.0,True
+223,Nicolas Barbosa,RJ,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Em trânsito,Cartão de Débito,2024-06-23,,9897.0,,6.0,2024.0,True
+224,Ana Silva,BA,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,PIX,2024-03-30,2024-10-04,9897.0,188.0,3.0,2024.0,True
+225,Nicolas Barbosa,Não informado,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Entregue,Cartão de Crédito,2024-11-06,,1049.7,,11.0,2024.0,True
+226,Felipe Lima,GO,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Cancelado,Boleto,2024-11-10,,899.0,,11.0,2024.0,False
+227,Diego Souza,CE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Crédito,2024-04-27,,559.8,,4.0,2024.0,True
+228,Gabriela Rocha,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,PIX,,,649.75,,,,True
+229,Felipe Lima,BA,Tênis Nike Air Max,Calçados,1,349.9,349.9,Pendente,Boleto,2024-12-18,,349.9,,12.0,2024.0,True
+230,João Oliveira,SP,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Pendente,Cartão de Crédito,2024-04-16,,2249.5,,4.0,2024.0,True
+231,Marina Gomes,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-02-15,,599.7,,2.0,2024.0,True
+232,Isabela Martins,RS,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-09-26,,16495.0,,9.0,2024.0,True
+233,Bruno Costa,MG,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-10-12,,259.9,,10.0,2024.0,True
+234,Nicolas Barbosa,BA,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,Boleto,2024-12-08,,-199.9,,12.0,2024.0,True
+235,Diego Souza,GO,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Boleto,2024-08-27,2024-10-09,3299.0,43.0,8.0,2024.0,True
+236,Karla Santos,RJ,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Débito,2024-07-12,,259.9,,7.0,2024.0,True
+237,Isabela Martins,SC,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,PIX,2024-09-24,,449.5,,9.0,2024.0,True
+238,Elena Ferreira,RS,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Pendente,PIX,2024-10-26,,899.0,,10.0,2024.0,True
+239,Karla Santos,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Em trânsito,Boleto,2024-03-18,,1349.7,,3.0,2024.0,True
+240,Carla Mendes,SP,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Pendente,Cartão de Débito,2024-12-22,,9897.0,,12.0,2024.0,True
+241,Ana Silva,RJ,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Entregue,Cartão de Débito,2024-09-05,,1349.7,,9.0,2024.0,True
+242,Henrique Alves,RJ,Tênis Vans,Calçados,2,279.9,559.8,Cancelado,Cartão de Débito,2024-02-16,,559.8,,2.0,2024.0,False
+243,Bruno Costa,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Cancelado,Boleto,2024-10-29,,3596.0,,10.0,2024.0,False
+244,Bruno Costa,BA,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Cancelado,Boleto,2024-06-02,,2697.0,,6.0,2024.0,False
+245,Marina Gomes,MG,Mochila Samsonite,Acessórios,1,259.9,259.9,Cancelado,Cartão de Crédito,2024-03-08,,259.9,,3.0,2024.0,False
+246,Gabriela Rocha,PE,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Cancelado,Boleto,2024-08-20,,269.7,,8.0,2024.0,False
+247,Nicolas Barbosa,CE,Relógio Casio,Acessórios,4,189.9,759.6,Em trânsito,Boleto,2024-08-13,,759.6,,8.0,2024.0,True
+248,Nicolas Barbosa,GO,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-04-24,,599.7,,4.0,2024.0,True
+249,Lucas Pereira,PR,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Em trânsito,PIX,2024-07-15,,799.6,,7.0,2024.0,True
+250,Lucas Pereira,GO,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Crédito,2024-08-22,,899.0,,8.0,2024.0,True
+251,Carla Mendes,RS,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Entregue,Cartão de Crédito,2024-10-15,,449.9,,10.0,2024.0,True
+252,João Oliveira,MG,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-02-10,,999.5,,2.0,2024.0,True
+253,Bruno Costa,CE,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Boleto,2024-12-16,,399.8,,12.0,2024.0,True
+254,Felipe Lima,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Boleto,,,599.7,,,,True
+255,Gabriela Rocha,PE,Tênis Vans,Calçados,3,279.9,839.6999999999999,Pendente,Cartão de Crédito,2024-05-13,,839.7,,5.0,2024.0,True
+256,Karla Santos,RS,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,PIX,2024-11-27,,1799.6,,11.0,2024.0,True
+257,Felipe Lima,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-12-23,,399.8,,12.0,2024.0,True
+258,Bruno Costa,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,PIX,2024-04-24,2024-09-05,949.5,134.0,4.0,2024.0,True
+259,Felipe Lima,GO,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Boleto,2024-01-05,,16495.0,,1.0,2024.0,True
+260,Bruno Costa,BA,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-05-25,,189.9,,5.0,2024.0,True
+261,Isabela Martins,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Cancelado,Cartão de Débito,2024-05-10,,1049.7,,5.0,2024.0,False
+262,Karla Santos,PE,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,PIX,2024-09-15,,4495.0,,9.0,2024.0,True
+263,Bruno Costa,SP,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Cancelado,PIX,2024-09-11,,6598.0,,9.0,2024.0,False
+264,Olivia Castro,RS,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Débito,2024-03-27,,1399.5,,3.0,2024.0,True
+265,Ana Silva,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Pendente,Boleto,2024-08-08,,1799.6,,8.0,2024.0,True
+266,Diego Souza,PR,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-02-17,,949.5,,2.0,2024.0,True
+267,Karla Santos,GO,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Entregue,Cartão de Crédito,2024-12-30,,1049.7,,12.0,2024.0,True
+268,João Oliveira,SP,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Entregue,Cartão de Débito,2024-07-22,,269.7,,7.0,2024.0,True
+269,Carla Mendes,PE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Cartão de Débito,2024-08-24,,559.8,,8.0,2024.0,True
+270,Olivia Castro,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-05-20,,1299.5,,5.0,2024.0,True
+271,Ana Silva,MG,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,Cartão de Débito,2024-09-11,,4495.0,,9.0,2024.0,True
+272,Bruno Costa,RJ,Relógio Casio,Acessórios,1,189.9,189.9,Pendente,Cartão de Débito,2024-07-03,,189.9,,7.0,2024.0,True
+273,Felipe Lima,SP,Tênis Vans,Calçados,3,279.9,839.6999999999999,Entregue,Cartão de Débito,2024-06-06,2024-09-06,839.7,92.0,6.0,2024.0,True
+274,Diego Souza,MG,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-02-26,,949.5,,2.0,2024.0,True
+275,Diego Souza,PE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-05-05,2024-07-05,89.9,61.0,5.0,2024.0,True
+276,Henrique Alves,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Crédito,2024-05-23,,1299.5,,5.0,2024.0,True
+277,João Oliveira,PR,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Crédito,2024-12-10,,189.9,,12.0,2024.0,True
+278,Henrique Alves,BA,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Cartão de Crédito,2024-02-07,,259.9,,2.0,2024.0,True
+279,Gabriela Rocha,SP,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Pendente,Boleto,2024-10-21,,1399.6,,10.0,2024.0,True
+280,Nicolas Barbosa,SP,Tênis Vans,Calçados,1,279.9,279.9,Pendente,PIX,2024-03-26,,279.9,,3.0,2024.0,True
+281,Karla Santos,SC,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,PIX,2024-05-20,,399.8,,5.0,2024.0,True
+282,Henrique Alves,RJ,Notebook Dell,Eletrônicos,2,3299.0,6598.0,Entregue,Cartão de Crédito,2024-02-22,,6598.0,,2.0,2024.0,True
+283,Gabriela Rocha,RJ,Mochila Samsonite,Acessórios,1,259.9,259.9,Em trânsito,PIX,2024-06-27,,259.9,,6.0,2024.0,True
+284,João Oliveira,MG,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-06-25,2024-07-07,1119.6,12.0,6.0,2024.0,True
+285,Olivia Castro,MG,Tênis Vans,Calçados,4,279.9,1119.6,Cancelado,Cartão de Débito,2024-09-01,,1119.6,,9.0,2024.0,False
+286,Henrique Alves,MG,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Cancelado,Cartão de Débito,2024-03-16,,2249.5,,3.0,2024.0,False
+287,Elena Ferreira,PE,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,Cartão de Crédito,2024-12-15,,279.9,,12.0,2024.0,False
+288,Bruno Costa,GO,Tênis Vans,Calçados,3,279.9,839.6999999999999,Cancelado,Boleto,2024-10-26,,839.7,,10.0,2024.0,False
+289,Isabela Martins,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Crédito,2024-11-27,,1299.5,,11.0,2024.0,True
+290,Henrique Alves,GO,Relógio Casio,Acessórios,4,189.9,759.6,Cancelado,Cartão de Débito,2024-03-27,,759.6,,3.0,2024.0,False
+291,Henrique Alves,GO,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Pendente,Cartão de Débito,2024-04-13,,3299.0,,4.0,2024.0,True
+292,Bruno Costa,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,Boleto,2024-02-12,,999.5,,2.0,2024.0,False
+293,Isabela Martins,PE,Mochila Samsonite,Acessórios,4,259.9,1039.6,Entregue,Cartão de Crédito,2024-08-09,,1039.6,,8.0,2024.0,True
+294,Diego Souza,BA,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Boleto,2024-05-18,,399.8,,5.0,2024.0,True
+295,Nicolas Barbosa,SP,Tênis Vans,Calçados,3,279.9,839.6999999999999,Entregue,Cartão de Débito,2024-10-23,,839.7,,10.0,2024.0,True
+296,Ana Silva,SC,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,PIX,2024-02-18,,13196.0,,2.0,2024.0,True
+297,Diego Souza,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,PIX,2024-09-30,,189.9,,9.0,2024.0,False
+298,Lucas Pereira,PR,Tênis Nike Air Max,Calçados,5,349.9,1749.5,Em trânsito,Cartão de Crédito,2024-11-16,,1749.5,,11.0,2024.0,True
+299,Ana Silva,CE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Cancelado,Cartão de Crédito,2024-05-31,,2697.0,,5.0,2024.0,False
+300,Karla Santos,PE,Tênis Nike Air Max,Calçados,2,349.9,699.8,Cancelado,Cartão de Crédito,2024-02-21,,699.8,,2.0,2024.0,False
+301,Lucas Pereira,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,Boleto,2024-12-21,,519.8,,12.0,2024.0,True
+302,Carla Mendes,GO,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Pendente,Cartão de Crédito,2024-05-13,,9897.0,,5.0,2024.0,True
+303,Henrique Alves,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,PIX,2024-06-09,,399.8,,6.0,2024.0,True
+304,Não informado,SP,Tênis Vans,Calçados,3,279.9,839.6999999999999,Cancelado,Cartão de Débito,2024-03-17,,839.7,,3.0,2024.0,False
+305,Lucas Pereira,CE,Mochila Samsonite,Acessórios,2,259.9,519.8,Entregue,Cartão de Débito,2024-04-10,,519.8,,4.0,2024.0,True
+306,Felipe Lima,BA,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Em trânsito,PIX,2024-09-28,,3596.0,,9.0,2024.0,True
+307,Henrique Alves,PE,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Cancelado,Boleto,2024-09-04,,1049.7,,9.0,2024.0,False
+308,Karla Santos,GO,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Cancelado,Cartão de Crédito,2024-03-12,,269.7,,3.0,2024.0,False
+309,Felipe Lima,CE,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Boleto,2024-10-30,,9897.0,,10.0,2024.0,True
+310,Ana Silva,SP,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Entregue,Cartão de Débito,2024-11-26,,1798.0,,11.0,2024.0,True
+311,Marina Gomes,GO,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Débito,2024-10-12,,3299.0,,10.0,2024.0,True
+312,Lucas Pereira,RJ,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Pendente,PIX,2024-07-22,,799.6,,7.0,2024.0,True
+313,Não informado,PE,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,PIX,2024-08-13,,16495.0,,8.0,2024.0,True
+314,Bruno Costa,CE,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-04-21,,1119.6,,4.0,2024.0,True
+315,Gabriela Rocha,MG,Tênis Vans,Calçados,2,279.9,559.8,Em trânsito,PIX,2024-05-08,,559.8,,5.0,2024.0,True
+316,Nicolas Barbosa,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,Cartão de Crédito,2024-11-10,,189.9,,11.0,2024.0,False
+317,Nicolas Barbosa,MG,Mochila Samsonite,Acessórios,1,259.9,259.9,Entregue,Boleto,2024-10-31,,259.9,,10.0,2024.0,True
+318,Ana Silva,SP,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-12-21,,-50.0,,12.0,2024.0,True
+319,Bruno Costa,BA,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-12-22,,799.6,,12.0,2024.0,True
+320,Marina Gomes,RJ,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Boleto,2024-01-28,,16495.0,,1.0,2024.0,False
+321,Olivia Castro,SP,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-03-25,,279.9,,3.0,2024.0,True
+322,Felipe Lima,RS,Camiseta Adidas,Vestuário,4,89.9,359.6,Entregue,Cartão de Débito,2024-05-06,2024-10-05,359.6,152.0,5.0,2024.0,True
+323,Carla Mendes,SP,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Em trânsito,PIX,2024-03-31,,199.9,,3.0,2024.0,True
+324,Bruno Costa,SP,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Em trânsito,PIX,2024-06-08,,4495.0,,6.0,2024.0,True
+325,Karla Santos,CE,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Cancelado,Cartão de Crédito,2024-01-04,,1799.6,,1.0,2024.0,False
+326,Diego Souza,RJ,Tênis Vans,Calçados,2,279.9,559.8,Cancelado,Cartão de Débito,2024-10-11,,559.8,,10.0,2024.0,False
+327,Bruno Costa,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-07-18,,179.8,,7.0,2024.0,True
+328,Diego Souza,SP,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Crédito,2024-02-13,,519.8,,2.0,2024.0,True
+329,João Oliveira,SP,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,PIX,2024-03-11,,199.9,,3.0,2024.0,True
+330,João Oliveira,PR,Relógio Casio,Acessórios,1,189.9,189.9,Cancelado,Cartão de Crédito,2024-07-12,,189.9,,7.0,2024.0,False
+331,Elena Ferreira,CE,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Pendente,Cartão de Crédito,2024-03-10,,779.7,,3.0,2024.0,True
+332,Diego Souza,GO,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Pendente,Boleto,2024-10-25,,599.7,,10.0,2024.0,True
+333,Lucas Pereira,RS,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Cartão de Débito,,,999.5,,,,True
+334,Ana Silva,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Não informado,2024-01-21,,89.9,,1.0,2024.0,True
+335,Lucas Pereira,CE,Tênis Nike Air Max,Calçados,4,349.9,1399.6,Em trânsito,Cartão de Crédito,2024-04-03,,1399.6,,4.0,2024.0,True
+336,Henrique Alves,SC,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-11-30,,799.6,,11.0,2024.0,True
+337,Marina Gomes,CE,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,Boleto,2024-02-15,,13196.0,,2.0,2024.0,True
+338,Felipe Lima,CE,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Em trânsito,Cartão de Crédito,2024-08-22,,899.0,,8.0,2024.0,True
+339,Carla Mendes,GO,Camiseta Adidas,Vestuário,4,89.9,359.6,Em trânsito,Cartão de Débito,2024-12-14,,719.2,,12.0,2024.0,True
+340,Elena Ferreira,PE,Camiseta Adidas,Vestuário,5,89.9,449.5,Entregue,PIX,2024-12-10,,449.5,,12.0,2024.0,True
+341,Karla Santos,CE,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-07-14,,759.6,,7.0,2024.0,True
+342,Karla Santos,GO,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,PIX,2024-05-27,,899.0,,5.0,2024.0,True
+343,Marina Gomes,SP,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Débito,2024-03-15,,569.7,,3.0,2024.0,True
+344,Gabriela Rocha,MG,Mochila Samsonite,Acessórios,2,259.9,519.8,Em trânsito,Cartão de Débito,2024-07-10,,1039.6,,7.0,2024.0,True
+345,Bruno Costa,GO,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Entregue,Cartão de Débito,2024-11-28,,9897.0,,11.0,2024.0,True
+346,Diego Souza,MG,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Cartão de Crédito,2024-09-16,,399.8,,9.0,2024.0,True
+347,Olivia Castro,CE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-12-15,,179.8,,12.0,2024.0,True
+348,Diego Souza,GO,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-02-27,,599.7,,2.0,2024.0,True
+349,Nicolas Barbosa,PE,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Entregue,Cartão de Débito,2024-01-08,,1199.4,,1.0,2024.0,True
+350,Marina Gomes,GO,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Boleto,2024-06-14,,1119.6,,6.0,2024.0,True
+351,Henrique Alves,PE,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Pendente,Cartão de Crédito,2024-05-14,,13196.0,,5.0,2024.0,True
+352,Olivia Castro,MG,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Cancelado,PIX,2024-11-27,,899.0,,11.0,2024.0,False
+353,Diego Souza,GO,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Entregue,PIX,2024-11-02,2024-12-11,4495.0,39.0,11.0,2024.0,True
+354,Nicolas Barbosa,RJ,Tênis Vans,Calçados,3,279.9,839.6999999999999,Entregue,PIX,2024-05-19,,839.7,,5.0,2024.0,True
+355,Bruno Costa,RS,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,PIX,2024-10-23,,1799.6,,10.0,2024.0,True
+356,Nicolas Barbosa,BA,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-10-27,,279.9,,10.0,2024.0,True
+357,Nicolas Barbosa,BA,Camiseta Adidas,Vestuário,4,89.9,359.6,Entregue,PIX,2024-05-07,,359.6,,5.0,2024.0,True
+358,Elena Ferreira,BA,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-03-20,,949.5,,3.0,2024.0,True
+359,Elena Ferreira,CE,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Boleto,2024-01-29,,89.9,,1.0,2024.0,True
+360,Diego Souza,PE,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Débito,2024-05-31,,1299.5,,5.0,2024.0,True
+361,Elena Ferreira,GO,Mochila Samsonite,Acessórios,5,259.9,1299.5,Cancelado,PIX,2024-12-19,,1299.5,,12.0,2024.0,False
+362,Henrique Alves,PE,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Entregue,Cartão de Crédito,2024-04-05,2024-08-04,2249.5,121.0,4.0,2024.0,True
+363,Elena Ferreira,RS,Tênis Nike Air Max,Calçados,1,349.9,349.9,Em trânsito,Cartão de Crédito,2024-06-10,,699.8,,6.0,2024.0,True
+364,Bruno Costa,MG,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,Cartão de Débito,2024-07-10,2024-12-07,199.9,150.0,7.0,2024.0,True
+365,Karla Santos,SC,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Cancelado,PIX,2024-04-15,,899.8,,4.0,2024.0,False
+366,Olivia Castro,GO,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,Cartão de Débito,2024-12-01,,279.9,,12.0,2024.0,False
+367,Nicolas Barbosa,RJ,Smartwatch Samsung,Eletrônicos,5,899.0,4495.0,Em trânsito,PIX,2024-12-03,,4495.0,,12.0,2024.0,True
+368,Nicolas Barbosa,BA,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Cartão de Débito,2024-01-13,,199.9,,1.0,2024.0,False
+369,Henrique Alves,RJ,Tênis Vans,Calçados,2,279.9,559.8,Entregue,Boleto,2024-01-11,,-50.0,,1.0,2024.0,True
+370,João Oliveira,PE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Cartão de Débito,2024-04-24,2024-09-05,179.8,134.0,4.0,2024.0,True
+371,Felipe Lima,PE,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Em trânsito,PIX,2024-12-16,,1049.7,,12.0,2024.0,True
+372,Carla Mendes,RS,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Débito,2024-10-25,,1949.25,,10.0,2024.0,True
+373,João Oliveira,RS,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Pendente,PIX,2024-04-28,,799.6,,4.0,2024.0,True
+374,Marina Gomes,RS,Camiseta Adidas,Vestuário,2,89.9,179.8,Em trânsito,Boleto,2024-12-29,,179.8,,12.0,2024.0,True
+375,Ana Silva,PR,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Cancelado,Cartão de Crédito,2024-12-07,,1349.7,,12.0,2024.0,False
+376,João Oliveira,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Pendente,PIX,2024-04-18,,949.5,,4.0,2024.0,True
+377,Ana Silva,RS,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,Cartão de Crédito,2024-10-21,,-199.9,,10.0,2024.0,True
+378,Olivia Castro,PE,Tênis Vans,Calçados,2,279.9,559.8,Entregue,PIX,2024-03-25,,559.8,,3.0,2024.0,True
+379,Diego Souza,GO,Tênis Nike Air Max,Calçados,1,349.9,349.9,Entregue,PIX,2024-09-22,,349.9,,9.0,2024.0,True
+380,Henrique Alves,SC,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Cartão de Crédito,2024-05-23,,1299.5,,5.0,2024.0,True
+381,Lucas Pereira,GO,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-12-29,2025-01-01,2697.0,3.0,12.0,2024.0,True
+382,Karla Santos,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,Cartão de Débito,2024-11-13,,599.7,,11.0,2024.0,True
+383,Isabela Martins,RS,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,Cartão de Crédito,2024-03-13,,799.6,,3.0,2024.0,True
+384,Henrique Alves,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Em trânsito,Cartão de Crédito,2024-03-25,,399.8,,3.0,2024.0,True
+385,Felipe Lima,CE,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Em trânsito,Boleto,2024-05-01,,2249.5,,5.0,2024.0,True
+386,Nicolas Barbosa,MG,Óculos Ray-Ban,Acessórios,4,449.9,1799.6,Entregue,Boleto,2024-03-06,2024-10-03,1799.6,211.0,3.0,2024.0,True
+387,Elena Ferreira,PR,Mochila Samsonite,Acessórios,4,259.9,1039.6,Entregue,PIX,2024-08-10,,1039.6,,8.0,2024.0,True
+388,Felipe Lima,PE,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Entregue,Boleto,2024-10-20,,269.7,,10.0,2024.0,True
+389,Nicolas Barbosa,SC,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Débito,2024-12-08,,999.5,,12.0,2024.0,True
+390,Isabela Martins,SP,Camiseta Adidas,Vestuário,1,89.9,89.9,Pendente,Cartão de Débito,2024-01-17,,89.9,,1.0,2024.0,True
+391,Ana Silva,MG,Relógio Casio,Acessórios,2,189.9,379.8,Entregue,Cartão de Débito,2024-02-05,2024-09-02,379.8,210.0,2.0,2024.0,True
+392,Diego Souza,CE,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Crédito,2024-01-24,,16495.0,,1.0,2024.0,True
+393,Henrique Alves,CE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-09-04,,999.5,,9.0,2024.0,True
+394,Isabela Martins,SC,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Boleto,2024-12-25,2025-08-01,1399.5,219.0,12.0,2024.0,True
+395,Nicolas Barbosa,BA,Mochila Samsonite,Acessórios,4,259.9,1039.6,Cancelado,Boleto,2024-06-11,,1039.6,,6.0,2024.0,False
+396,Diego Souza,GO,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,Boleto,2024-02-20,,759.6,,2.0,2024.0,True
+397,Henrique Alves,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Cancelado,Cartão de Débito,2024-09-27,,599.7,,9.0,2024.0,False
+398,Marina Gomes,MG,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Crédito,2024-06-26,,569.7,,6.0,2024.0,True
+399,Isabela Martins,MG,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-04-18,,2697.0,,4.0,2024.0,True
+400,Marina Gomes,MG,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,PIX,,2024-12-03,89.9,,,,True
+401,Felipe Lima,SC,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,PIX,2024-03-15,,189.9,,3.0,2024.0,True
+402,Elena Ferreira,RJ,Relógio Casio,Acessórios,3,189.9,569.7,Cancelado,PIX,2024-01-27,,569.7,,1.0,2024.0,False
+403,Felipe Lima,SC,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Pendente,Boleto,2024-06-29,,199.9,,6.0,2024.0,True
+404,Nicolas Barbosa,BA,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Pendente,Cartão de Crédito,2024-04-18,,599.7,,4.0,2024.0,True
+405,Karla Santos,BA,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-12-09,,199.9,,12.0,2024.0,True
+406,Isabela Martins,SC,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,Cartão de Crédito,,,699.8,,,,True
+407,João Oliveira,BA,Tênis Nike Air Max,Calçados,2,349.9,699.8,Entregue,PIX,2024-12-06,,699.8,,12.0,2024.0,True
+408,Olivia Castro,RJ,Camiseta Adidas,Vestuário,2,89.9,179.8,Em trânsito,Cartão de Débito,2024-06-28,,179.8,,6.0,2024.0,True
+409,Elena Ferreira,GO,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-03-27,,759.6,,3.0,2024.0,True
+410,Elena Ferreira,GO,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Cancelado,PIX,2024-05-19,,199.9,,5.0,2024.0,False
+411,Diego Souza,PE,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-05-22,,799.6,,5.0,2024.0,True
+412,Felipe Lima,RS,Fone JBL Bluetooth,Eletrônicos,4,199.9,799.6,Entregue,PIX,2024-09-12,,799.6,,9.0,2024.0,True
+413,Ana Silva,PE,Tênis Vans,Calçados,3,279.9,839.6999999999999,Pendente,Cartão de Crédito,2024-03-09,,839.7,,3.0,2024.0,True
+414,Felipe Lima,SC,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,Boleto,2024-05-13,,999.5,,5.0,2024.0,True
+415,Nicolas Barbosa,GO,Mochila Samsonite,Acessórios,1,259.9,259.9,Em trânsito,Cartão de Débito,2024-09-08,,259.9,,9.0,2024.0,True
+416,Felipe Lima,MG,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,PIX,2024-05-20,,1199.4,,5.0,2024.0,True
+417,Bruno Costa,RS,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Boleto,2024-12-24,,7192.0,,12.0,2024.0,True
+418,Diego Souza,RJ,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Boleto,2024-08-04,,199.9,,8.0,2024.0,False
+419,Lucas Pereira,BA,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-12-09,2024-12-12,179.8,3.0,12.0,2024.0,True
+420,João Oliveira,SP,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-02-13,,179.8,,2.0,2024.0,True
+421,João Oliveira,PR,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Entregue,Cartão de Crédito,2024-11-20,,13196.0,,11.0,2024.0,True
+422,Gabriela Rocha,GO,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Entregue,Cartão de Débito,2024-06-19,,449.9,,6.0,2024.0,True
+423,Olivia Castro,GO,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,Boleto,2024-03-03,2024-05-03,399.8,61.0,3.0,2024.0,True
+424,Marina Gomes,PE,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Entregue,Cartão de Crédito,2024-04-09,,2249.5,,4.0,2024.0,True
+425,Gabriela Rocha,CE,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,PIX,2024-05-10,2024-12-05,949.5,209.0,5.0,2024.0,True
+426,Karla Santos,PR,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Entregue,Cartão de Crédito,2024-08-26,,3596.0,,8.0,2024.0,True
+427,Carla Mendes,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Não informado,2024-06-16,,399.8,,6.0,2024.0,True
+428,Henrique Alves,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Boleto,2024-12-19,,179.8,,12.0,2024.0,True
+429,Gabriela Rocha,BA,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Cancelado,Cartão de Débito,2024-10-21,,9897.0,,10.0,2024.0,False
+430,Nicolas Barbosa,RJ,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Débito,2024-04-18,,949.5,,4.0,2024.0,True
+431,Marina Gomes,PR,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-02-15,,1199.4,,2.0,2024.0,True
+432,Carla Mendes,SC,Tênis Vans,Calçados,1,279.9,279.9,Pendente,PIX,2024-08-18,,279.9,,8.0,2024.0,True
+433,Gabriela Rocha,CE,Relógio Casio,Acessórios,1,189.9,189.9,Entregue,Cartão de Débito,2024-05-02,,189.9,,5.0,2024.0,True
+434,Nicolas Barbosa,PR,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Boleto,2024-04-22,,1798.0,,4.0,2024.0,False
+435,Ana Silva,PR,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,Cartão de Crédito,2024-12-12,,179.8,,12.0,2024.0,True
+436,Isabela Martins,MG,Camiseta Adidas,Vestuário,5,89.9,449.5,Pendente,PIX,2024-03-28,,449.5,,3.0,2024.0,True
+437,Bruno Costa,SC,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,Cartão de Crédito,2024-06-07,,199.9,,6.0,2024.0,True
+438,Lucas Pereira,PR,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-03-24,,2697.0,,3.0,2024.0,True
+439,Lucas Pereira,RS,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Boleto,2024-10-04,,3299.0,,10.0,2024.0,True
+440,Lucas Pereira,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Em trânsito,Cartão de Crédito,2024-01-15,,1349.7,,1.0,2024.0,True
+441,Olivia Castro,SP,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Em trânsito,PIX,2024-12-25,,599.7,,12.0,2024.0,True
+442,Nicolas Barbosa,MG,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Entregue,Cartão de Débito,2024-05-27,2024-08-06,269.7,71.0,5.0,2024.0,True
+443,Felipe Lima,PE,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Débito,2024-07-21,,2697.0,,7.0,2024.0,True
+444,Karla Santos,SC,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Em trânsito,Boleto,,,449.9,,,,True
+445,Nicolas Barbosa,RJ,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Em trânsito,PIX,2024-08-25,,599.7,,8.0,2024.0,True
+446,Karla Santos,BA,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Cancelado,Boleto,2024-04-24,,1798.0,,4.0,2024.0,False
+447,Diego Souza,SP,Tênis Nike Air Max,Calçados,3,349.9,1049.6999999999998,Entregue,Cartão de Crédito,2024-04-18,,1049.7,,4.0,2024.0,True
+448,Henrique Alves,CE,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,PIX,2024-05-27,2024-09-06,799.6,102.0,5.0,2024.0,True
+449,João Oliveira,SP,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Crédito,2024-10-31,,399.8,,10.0,2024.0,True
+450,Karla Santos,PR,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Crédito,2024-12-26,,399.8,,12.0,2024.0,True
+451,Diego Souza,RJ,Smartwatch Samsung,Eletrônicos,2,899.0,1798.0,Em trânsito,Cartão de Débito,2024-03-29,,1798.0,,3.0,2024.0,True
+452,Nicolas Barbosa,PE,Tênis Vans,Calçados,1,279.9,279.9,Cancelado,PIX,2024-11-01,,279.9,,11.0,2024.0,False
+453,João Oliveira,CE,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Em trânsito,Cartão de Crédito,2024-12-03,,1349.7,,12.0,2024.0,True
+454,Diego Souza,BA,Camiseta Adidas,Vestuário,3,89.9,269.70000000000005,Entregue,Cartão de Crédito,2024-11-05,,269.7,,11.0,2024.0,True
+455,Nicolas Barbosa,RJ,Tênis Nike Air Max,Calçados,1,349.9,349.9,Em trânsito,Cartão de Débito,2024-03-11,,349.9,,3.0,2024.0,True
+456,Karla Santos,RS,Fone JBL Bluetooth,Eletrônicos,3,199.9,599.7,Entregue,Cartão de Crédito,2024-04-22,,599.7,,4.0,2024.0,True
+457,Carla Mendes,CE,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Cartão de Débito,2024-09-02,2024-12-09,279.9,98.0,9.0,2024.0,True
+458,Isabela Martins,PR,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Em trânsito,Cartão de Débito,2024-12-25,,999.5,,12.0,2024.0,True
+459,Nicolas Barbosa,PE,Camiseta Adidas,Vestuário,2,89.9,179.8,Entregue,PIX,2024-07-30,,179.8,,7.0,2024.0,True
+460,Isabela Martins,PE,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,Boleto,2024-10-05,,899.0,,10.0,2024.0,True
+461,Gabriela Rocha,PE,Camiseta Adidas,Vestuário,4,89.9,359.6,Pendente,PIX,2024-10-25,,359.6,,10.0,2024.0,True
+462,Nicolas Barbosa,PE,Mochila Samsonite,Acessórios,5,259.9,1299.5,Entregue,Boleto,2024-03-23,,1299.5,,3.0,2024.0,True
+463,Isabela Martins,SC,Tênis Vans,Calçados,1,279.9,279.9,Entregue,Boleto,2024-10-01,,279.9,,10.0,2024.0,True
+464,Felipe Lima,MG,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Entregue,PIX,2024-03-07,,999.5,,3.0,2024.0,True
+465,Felipe Lima,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Em trânsito,Boleto,2024-03-09,,89.9,,3.0,2024.0,True
+466,Isabela Martins,GO,Smartwatch Samsung,Eletrônicos,4,899.0,3596.0,Em trânsito,Cartão de Débito,2024-01-12,,3596.0,,1.0,2024.0,True
+467,Olivia Castro,PE,Óculos Ray-Ban,Acessórios,3,449.9,1349.6999999999998,Pendente,PIX,2024-11-27,,1349.7,,11.0,2024.0,True
+468,Gabriela Rocha,PE,Tênis Vans,Calçados,4,279.9,1119.6,Em trânsito,Cartão de Débito,2024-08-18,,1119.6,,8.0,2024.0,True
+469,Marina Gomes,PR,Tênis Vans,Calçados,3,279.9,839.6999999999999,Entregue,Não informado,2024-03-21,,839.7,,3.0,2024.0,True
+470,Bruno Costa,BA,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Cartão de Crédito,2024-06-02,2024-12-06,999.5,187.0,6.0,2024.0,True
+471,Felipe Lima,GO,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Cancelado,Boleto,2024-11-10,,899.0,,11.0,2024.0,False
+472,Olivia Castro,SP,Relógio Casio,Acessórios,4,189.9,759.6,Entregue,Boleto,2024-04-30,2024-08-05,759.6,97.0,4.0,2024.0,True
+473,Ana Silva,SC,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Entregue,Cartão de Crédito,2024-07-01,,2697.0,,7.0,2024.0,True
+474,Felipe Lima,RS,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-11-28,,89.9,,11.0,2024.0,True
+475,Marina Gomes,RS,Fone JBL Bluetooth,Eletrônicos,5,199.9,999.5,Em trânsito,Cartão de Crédito,2024-09-26,,999.5,,9.0,2024.0,True
+476,Bruno Costa,MG,Óculos Ray-Ban,Acessórios,1,449.9,449.9,Entregue,Boleto,,,449.9,,,,True
+477,Diego Souza,PR,Relógio Casio,Acessórios,5,189.9,949.5,Entregue,Cartão de Crédito,2024-02-17,,949.5,,2.0,2024.0,True
+478,Elena Ferreira,SP,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Cancelado,Cartão de Débito,2024-07-05,,399.8,,7.0,2024.0,False
+479,Ana Silva,BA,Smartwatch Samsung,Eletrônicos,3,899.0,2697.0,Em trânsito,Cartão de Débito,2024-10-02,,2697.0,,10.0,2024.0,True
+480,Não informado,GO,Mochila Samsonite,Acessórios,2,259.9,519.8,Pendente,Boleto,2024-10-12,,519.8,,10.0,2024.0,True
+481,Elena Ferreira,BA,Relógio Casio,Acessórios,2,189.9,379.8,Pendente,Cartão de Débito,2024-11-23,,379.8,,11.0,2024.0,True
+482,Olivia Castro,SP,Tênis Vans,Calçados,5,279.9,1399.5,Entregue,Cartão de Crédito,2024-02-27,2024-05-03,1399.5,66.0,2.0,2024.0,True
+483,João Oliveira,BA,Camiseta Adidas,Vestuário,1,89.9,89.9,Entregue,Cartão de Crédito,2024-04-01,2024-06-04,89.9,64.0,4.0,2024.0,True
+484,Não informado,BA,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,Cartão de Débito,2024-01-09,2024-12-01,899.0,327.0,1.0,2024.0,True
+485,Nicolas Barbosa,PE,Relógio Casio,Acessórios,4,189.9,759.6,Pendente,Cartão de Débito,2024-10-04,,759.6,,10.0,2024.0,True
+486,Não informado,PR,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Entregue,Boleto,2024-01-24,,999.5,,1.0,2024.0,True
+487,Henrique Alves,PR,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Cancelado,Cartão de Débito,2024-09-04,,16495.0,,9.0,2024.0,False
+488,Carla Mendes,CE,Calça Jeans Levi's,Vestuário,1,199.9,199.9,Entregue,Cartão de Débito,2024-11-25,,199.9,,11.0,2024.0,True
+489,Felipe Lima,SP,Mochila Samsonite,Acessórios,3,259.9,779.6999999999999,Entregue,Boleto,2024-08-11,,779.7,,8.0,2024.0,True
+490,Karla Santos,SP,Óculos Ray-Ban,Acessórios,2,449.9,899.8,Pendente,Boleto,2024-01-09,,899.8,,1.0,2024.0,True
+491,Ana Silva,BA,Óculos Ray-Ban,Acessórios,5,449.9,2249.5,Entregue,PIX,2024-09-09,,2249.5,,9.0,2024.0,True
+492,João Oliveira,PR,Notebook Dell,Eletrônicos,1,3299.0,3299.0,Entregue,Cartão de Débito,2024-06-25,2024-08-07,6598.0,43.0,6.0,2024.0,True
+493,Gabriela Rocha,BA,Tênis Nike Air Max,Calçados,2,349.9,699.8,Pendente,Boleto,2024-08-17,,699.8,,8.0,2024.0,True
+494,Bruno Costa,MG,Notebook Dell,Eletrônicos,3,3299.0,9897.0,Cancelado,Boleto,2024-07-14,,9897.0,,7.0,2024.0,False
+495,Isabela Martins,PE,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,PIX,2024-05-17,,569.7,,5.0,2024.0,True
+496,Marina Gomes,RJ,Notebook Dell,Eletrônicos,4,3299.0,13196.0,Em trânsito,Cartão de Débito,2024-04-23,,13196.0,,4.0,2024.0,True
+497,Ana Silva,CE,Fone JBL Bluetooth,Eletrônicos,1,199.9,199.9,Entregue,Cartão de Débito,2024-06-09,,199.9,,6.0,2024.0,True
+498,Gabriela Rocha,BA,Relógio Casio,Acessórios,3,189.9,569.7,Entregue,Cartão de Crédito,2024-01-14,,569.7,,1.0,2024.0,True
+499,Diego Souza,SC,Notebook Dell,Eletrônicos,5,3299.0,16495.0,Entregue,Cartão de Débito,2024-07-28,2024-09-08,16495.0,42.0,7.0,2024.0,True
+500,Karla Santos,GO,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Cancelado,PIX,2024-05-09,,399.8,,5.0,2024.0,False
+501,Felipe Lima,MG,Calça Jeans Levi's,Vestuário,2,199.9,399.8,Entregue,Cartão de Crédito,2024-05-07,,399.8,,5.0,2024.0,True
+502,João Oliveira,SC,Calça Jeans Levi's,Vestuário,4,199.9,799.6,Entregue,Cartão de Débito,2024-01-11,,799.6,,1.0,2024.0,True
+503,Marina Gomes,RS,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-08-31,,399.8,,8.0,2024.0,True
+504,Bruno Costa,BA,Smartwatch Samsung,Eletrônicos,1,899.0,899.0,Entregue,PIX,2024-01-21,,899.0,,1.0,2024.0,True
+505,Diego Souza,MG,Mochila Samsonite,Acessórios,5,259.9,1299.5,Pendente,Cartão de Débito,2024-02-26,,1299.5,,2.0,2024.0,True
+506,Isabela Martins,PE,Camiseta Adidas,Vestuário,2,89.9,179.8,Pendente,Boleto,2024-06-28,,0.0,,6.0,2024.0,True
+507,Carla Mendes,CE,Fone JBL Bluetooth,Eletrônicos,2,199.9,399.8,Entregue,PIX,2024-10-27,,399.8,,10.0,2024.0,True
+508,Nicolas Barbosa,PE,Calça Jeans Levi's,Vestuário,5,199.9,999.5,Cancelado,Cartão de Crédito,2024-11-07,,999.5,,11.0,2024.0,False
+509,Ana Silva,SC,Calça Jeans Levi's,Vestuário,3,199.9,599.7,Pendente,Cartão de Débito,2024-05-26,,599.7,,5.0,2024.0,True
+510,Ana Silva,PE,Tênis Vans,Calçados,4,279.9,1119.6,Entregue,Cartão de Crédito,2024-08-24,,1119.6,,8.0,2024.0,True

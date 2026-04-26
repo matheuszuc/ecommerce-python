@@ -1,132 +1,268 @@
-# 🛒 E-commerce — Limpeza e Análise de Dados
+# Análise de Dados de E-commerce com Python
 
-## Sobre o Projeto
+Este projeto tem como objetivo realizar a limpeza, tratamento e análise de uma base de pedidos de e-commerce, utilizando Python para gerar indicadores de negócio, identificar padrões de vendas e visualizar os resultados por meio de gráficos.
 
-Projeto desenvolvido para praticar limpeza, tratamento e análise exploratória de dados utilizando Python e pandas.
+O foco do projeto é simular uma análise próxima de um cenário real, passando por etapas como verificação da qualidade dos dados, correção de inconsistências, criação de KPIs e geração de insights para apoiar decisões.
 
-Neste projeto, analisei um dataset fictício de e-commerce contendo problemas comuns em bases reais, como dados nulos, registros duplicados, datas inconsistentes, valores inválidos e erros de cálculo.
+---
 
-Após o tratamento da base, realizei a exploração dos dados para gerar insights relevantes para o negócio, analisando faturamento, produtos mais vendidos, desempenho por estado e formas de pagamento.
+## Objetivo do Projeto
 
------
+Analisar os pedidos de uma operação de e-commerce para responder perguntas como:
 
-## 🎯 Objetivo do Projeto
+- Qual foi o faturamento total e líquido?
+- Quais categorias geraram mais receita?
+- Quais produtos mais contribuíram para o faturamento?
+- Qual foi a taxa de cancelamento?
+- Quais formas de pagamento geraram mais faturamento?
+- Quais estados tiveram maior faturamento?
+- Quais estados tiveram maior quantidade vendida?
+- Como o faturamento variou ao longo dos meses?
 
-O objetivo deste projeto foi simular um cenário real de análise de dados em um e-commerce, realizando desde a limpeza da base até a geração de insights e recomendações de negócio.
+---
 
------
+## Ferramentas Utilizadas
 
-## 📌 KPIs Principais
-
-| Indicador | Valor |
-|---|---|
-| 💵 Faturamento Total | R$ 875.797,80 |
-| 🏆 Produto com Maior Faturamento | Notebook Dell |
-| 📦 Produto com Mais Pedidos | Tênis Vans |
-| 📊 Produto com Maior Quantidade Vendida | Notebook Dell |
-| 🗺️ Estado com Maior Faturamento | SC |
-| 📍 Estado com Mais Pedidos | GO |
-
------
-
-## 🛠️ Ferramentas Utilizadas
-
-- Python 3
+- Python
 - Pandas
 - Matplotlib
 - Jupyter Notebook
 
------
+---
 
-## 🔍 Problemas Encontrados e Tratados
+## Estrutura do Projeto
 
-1. **Dados Nulos (cliente, estado, pagamento)** — Identificados e mantidos. Não havia como determinar o valor correto sem criar informações fictícias, o que distorceria a análise. Um cliente sem pagamento registrado, por exemplo, pode simplesmente não ter concluído a compra.
+```bash
+├── ecommerce_pedidos.csv
+├── ecommerce_pedidos_limpo.csv
+├── limpeza.ipynb
+├── analise_insights.ipynb
+├── grafico_faturamento_mensal.png
+├── grafico_faturamento_categoria.png
+├── grafico_faturamento_estado.png
+├── grafico_pagamento.png
+├── grafico_status_pedidos.png
+├── grafico_top_produtos.png
+├── grafico_quantidade_vendida_estado.png
+└── README.md
+```
 
-2. **Entregue sem Data de Entrega** — 12 pedidos com status “Entregue” apresentavam `data_entrega` nula. Mantidos e documentados, pois não há como saber a data real de entrega. Criar uma data fictícia seria um erro de análise.
+---
 
-3. **Dados Duplicados** — 9 linhas duplicadas encontradas e **removidas**. Linhas idênticas em cliente, produto, quantidade, valor e data representam registros inválidos.
+## Etapas da Análise
 
-4. **Formato de Data Inconsistente** — Datas misturavam os formatos `dd/mm/yyyy` e `yyyy-mm-dd`. Foram **corrigidas** e padronizadas para o formato `datetime`.
+### 1. Importação dos dados
 
-5. **Valores Impossíveis** — Pedidos com `valor_total` igual a R$ 0,00 ou negativo foram **removidos**. Um pedido sem valor financeiro não representa uma transação real e interfere diretamente no cálculo de faturamento.
+A base foi carregada a partir de um arquivo CSV contendo informações sobre pedidos, clientes, produtos, categorias, estados, formas de pagamento, status dos pedidos e datas.
 
-6. **Erro de Cálculo** — Em 20 linhas, o resultado de `quantidade × valor_unitario` era diferente do `valor_total`. Esses registros foram **corrigidos** recalculando o valor total correto.
+---
 
-7. **Data de Entrega Anterior ao Pedido** — Registros em que a data de entrega era anterior à data do pedido foram **removidos**, pois representam uma inconsistência lógica.
+### 2. Limpeza dos dados
 
------
+Durante a etapa de limpeza, foram realizados os seguintes tratamentos:
 
-## 📊 Insights Gerados
+- Verificação de valores nulos.
+- Preenchimento de campos ausentes em `cliente`, `estado` e `pagamento` com `Não informado`.
+- Verificação de duplicatas usando `pedido_id` como identificador único.
+- Correção do `valor_total` com base em:
 
-### 🏆 Produtos — Quantidade de Pedidos
+```python
+valor_total = quantidade * valor_unitario
+```
 
-![Quantidade por Produto](graficos/quantidade_por_produto.png)
+- Conversão das colunas de data para o formato correto.
+- Tratamento de datas de entrega inválidas, sem remover o pedido inteiro da base.
+- Criação de colunas auxiliares, como mês, ano, dias de entrega e pedido válido.
 
-### 💰 Produtos — Faturamento Total
+---
 
-![Faturamento por Produto](graficos/faturamento_por_produto.png)
+## Critérios usados nos KPIs
 
-> **Insight:** O **Tênis Vans** foi o produto que apareceu em mais pedidos, enquanto o **Notebook Dell** liderou tanto em faturamento quanto em quantidade total vendida. Já o **Óculos Ray-Ban** teve menor volume de vendas, mas ficou entre os produtos com maior faturamento, indicando um perfil premium.
+Para evitar distorções nos resultados, os indicadores foram separados em três tipos principais:
 
------
+| Indicador | Critério |
+|---|---|
+| Faturamento bruto | Considera todos os pedidos |
+| Faturamento líquido | Exclui pedidos cancelados |
+| Faturamento entregue | Considera apenas pedidos entregues |
 
-### 🗺️ Estados — Quantidade de Pedidos
+Essa separação é importante porque pedidos cancelados não devem ser tratados como receita real da empresa.
 
-![Pedidos por Estado](graficos/pedidos_por_estado.png)
+---
 
-### 🗺️ Estados — Faturamento Total
+## KPIs Principais
 
-![Faturamento por Estado](graficos/faturamento_por_estado.png)
+| KPI | Resultado |
+|---|---:|
+| Pedidos totais | 510 |
+| Pedidos válidos | 431 |
+| Pedidos entregues | 304 |
+| Pedidos cancelados | 79 |
+| Faturamento bruto | R$ 1.007.678,60 |
+| Faturamento líquido | R$ 835.990,70 |
+| Faturamento entregue | R$ 606.431,50 |
+| Ticket médio líquido | R$ 1.939,65 |
+| Itens vendidos | 1.291 |
+| Taxa de cancelamento | 15,49% |
+| Taxa de entrega | 59,61% |
+| Prazo médio de entrega | 8,50 dias |
 
-> **Insight:** **GO** lidera em número de pedidos, mas ocupa apenas a 3ª posição em faturamento. **SC** apresenta o maior faturamento, mesmo ocupando apenas o 6º lugar em quantidade de pedidos, indicando um possível perfil de cliente premium.
+---
 
------
+## Análises Realizadas
 
-### 💳 Formas de Pagamento — Quantidade de Pedidos
+### Faturamento por mês
 
-![Formas de Pagamento](graficos/formas_de_pagamento.png)
+Foi analisada a evolução do faturamento líquido ao longo dos meses, permitindo identificar períodos de maior e menor desempenho.
 
-### 💳 Formas de Pagamento — Faturamento Total
+O mês de maior faturamento foi agosto, enquanto junho apresentou um dos menores resultados da base.
 
-![Faturamento por Pagamento](graficos/faturamento_por_pagamento.png)
+---
 
-> **Insight:** **Boleto** é a forma de pagamento mais utilizada, mas apresenta uma das menores participações no faturamento. **Cartão de Débito** concentra o maior faturamento entre as formas de pagamento analisadas.
+### Faturamento por categoria
 
------
+A categoria com maior destaque foi Eletrônicos, representando a maior parte do faturamento líquido.
 
-## ✅ Conclusões e Recomendações
+Isso indica uma forte dependência da empresa em produtos de maior valor agregado.
 
-Com base na análise realizada, as seguintes ações são recomendadas para a empresa:
+---
 
-**1. Investigar estados com alto faturamento e baixa quantidade de pedidos**
+### Produtos com maior faturamento
 
-Estados como SC apresentam ticket médio elevado, indicando clientes com maior poder de compra. Vale entender o perfil desse público e criar estratégias para aumentar o volume de pedidos nessas regiões.
+O produto com maior impacto no faturamento foi o Notebook Dell, ficando muito acima dos demais produtos.
 
-**2. Criar campanhas para produtos premium**
+Esse resultado mostra que poucos produtos podem ter grande influência no desempenho financeiro do e-commerce.
 
-O Óculos Ray-Ban é o produto menos vendido em quantidade, mas ocupa a 3ª posição em faturamento. Uma campanha direcionada para esse produto pode aumentar significativamente a receita sem depender apenas do aumento no volume de vendas.
+---
 
-**3. Analisar o comportamento dos usuários de Boleto**
+### Forma de pagamento
 
-O Boleto lidera em quantidade de uso, mas tem menor participação no faturamento total. Isso pode indicar que clientes que pagam por boleto tendem a comprar produtos de menor valor. Vale investigar se incentivos como desconto no PIX ou no cartão poderiam migrar parte desse público para formas de pagamento com maior faturamento.
+A análise por forma de pagamento mostrou quais métodos mais contribuíram para o faturamento líquido.
 
------
+As opções com maior participação foram cartões, principalmente cartão de débito e cartão de crédito.
 
-## ▶️ Como Executar
+---
 
-1. Instale o [VS Code](https://code.visualstudio.com/)
-2. Instale o [Python](https://www.python.org/) e o Jupyter Notebook
-3. Instale as dependências:
+### Status dos pedidos
+
+A análise dos status permitiu identificar a quantidade de pedidos entregues, pendentes, em trânsito e cancelados.
+
+A taxa de cancelamento foi um ponto de atenção, pois representa uma perda direta de receita potencial.
+
+---
+
+### Faturamento por estado
+
+Também foi analisado o faturamento líquido por estado, considerando apenas pedidos que não foram cancelados.
+
+Essa análise permite identificar quais regiões geraram maior receita para a empresa, não apenas maior volume de pedidos.
+
+O estado de Santa Catarina (SC) apresentou o maior faturamento da base, mesmo não sendo o estado com maior volume de pedidos. Esse comportamento indica que SC pode ter concentrado pedidos de maior valor ou produtos com ticket médio mais alto.
+
+---
+
+### Quantidade vendida por estado
+
+Além da quantidade de pedidos por estado, também foi analisada a quantidade total de unidades vendidas.
+
+Essa análise foi feita somando a coluna `quantidade`, permitindo entender melhor quais estados concentraram maior volume de produtos vendidos.
+
+No caso de SC, o estado ficou entre os maiores volumes de produtos vendidos, mas o principal destaque foi o faturamento. Isso reforça que não basta analisar apenas quantidade, pois um estado pode vender menos unidades ou ter menos pedidos e ainda assim gerar mais receita.
+
+---
+
+## Insights Encontrados
+
+### 1. Eletrônicos concentram a maior parte do faturamento
+
+A categoria Eletrônicos foi responsável pela maior parte do faturamento líquido. Isso mostra que a operação depende bastante de produtos de maior valor.
+
+### 2. Notebook Dell é o principal produto da base
+
+O Notebook Dell foi o produto com maior faturamento, indicando que ele tem papel estratégico nos resultados da empresa.
+
+### 3. Cancelamentos impactam o faturamento
+
+A taxa de cancelamento ficou em aproximadamente 15,5%. Esse indicador merece acompanhamento, pois pedidos cancelados reduzem o faturamento real da operação.
+
+### 4. Cartões geram mais faturamento que outros métodos
+
+Cartão de débito e cartão de crédito tiveram forte participação no faturamento líquido, ficando à frente de outros métodos como PIX e boleto.
+
+### 5. Estados com mais vendas podem indicar regiões estratégicas
+
+A análise de quantidade vendida por estado ajuda a identificar regiões com maior volume de produtos vendidos, o que pode apoiar decisões de estoque, logística e campanhas regionais.
+
+### 6. SC tem o maior faturamento, mesmo sem liderar todos os indicadores de volume
+
+Santa Catarina (SC) foi o estado com maior faturamento líquido da base. Porém, ao comparar com os indicadores de volume, percebe-se que SC não lidera todos eles.
+
+Na análise de quantidade vendida, SC aparece entre os maiores estados em volume de produtos. Já na quantidade de pedidos, SC não é o primeiro colocado. Mesmo assim, o estado lidera em faturamento.
+
+Esse comportamento sugere que SC teve pedidos com maior valor médio, possivelmente por uma maior concentração de produtos de alto valor agregado. Esse é um bom exemplo de por que é importante analisar faturamento, quantidade vendida e número de pedidos separadamente.
+
+---
+
+## Gráficos Gerados
+
+Foram gerados gráficos para facilitar a visualização dos principais resultados:
+
+- Faturamento líquido por mês
+- Faturamento líquido por categoria
+- Faturamento líquido por estado
+- Faturamento líquido por forma de pagamento
+- Quantidade de pedidos por status
+- Top 10 produtos por faturamento
+- Quantidade vendida por estado
+
+---
+
+## Como Executar o Projeto
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+2. Instale as bibliotecas necessárias:
 
 ```bash
 pip install pandas matplotlib
 ```
 
-4. Execute o arquivo `limpeza.ipynb`
-5. Execute o arquivo `analise_insights.ipynb`
+3. Abra os notebooks no Jupyter:
 
------
+```bash
+jupyter notebook
+```
 
-## 👤 Autor
+4. Execute primeiro o notebook de limpeza:
 
-**Matheus** — [github.com/matheuszuc](https://github.com/matheuszuc)
+```bash
+limpeza.ipynb
+```
+
+5. Depois execute o notebook de análise:
+
+```bash
+analise_insights.ipynb
+```
+
+---
+
+## Conclusão
+
+Este projeto mostra um processo completo de análise de dados com Python, começando pela limpeza da base, passando pela correção de inconsistências e finalizando com KPIs, insights e gráficos.
+
+A análise permitiu identificar categorias e produtos mais relevantes, formas de pagamento mais representativas, impacto dos cancelamentos e regiões com maior faturamento e maior quantidade vendida.
+
+Um dos principais aprendizados foi comparar métricas diferentes antes de tirar conclusões. O caso de SC mostra que um estado pode não ser o primeiro em volume de pedidos, mas ainda assim liderar em faturamento, indicando maior valor médio por venda.
+
+O projeto reforça habilidades importantes para a área de dados, como tratamento de dados, criação de indicadores, análise exploratória e comunicação de resultados.
+
+---
+
+## Autor
+
+Desenvolvido por Matheus como projeto de prática em Análise de Dados.
